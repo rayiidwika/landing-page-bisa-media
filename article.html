@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Artikel - PT. BISA MEDIA GROUP</title>
+    <meta
+      name="description"
+      content="PT. BISA MEDIA GROUP - Detail Artikel. Partner Affiliate dan Kreator Media Terpercaya."
+    />
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Production Tailwind CSS & Custom Styles -->
+    <link href="assets/style.css" rel="stylesheet" />
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body class="bg-white overflow-x-hidden antialiased flex flex-col min-h-screen">
+    <!-- NAVBAR -->
+    <header
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img
+            src="assets/ICON-BISAMEDIA.png"
+            alt="Logo PT. BISA MEDIA GRUP"
+            class="h-12 w-auto object-contain rounded-lg mr-2"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-outfit font-black text-sm tracking-tight text-[#2C5EAD] leading-none"
+              >PT. BISA MEDIA GRUP</span
+            >
+            <span
+              class="text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+              >Grow Together</span
+            >
+          </div>
+        </a>
+
+        <!-- Nav Links -->
+        <nav
+          class="hidden md:flex items-center space-x-8 text-[14px] font-bold text-slate-600"
+        >
+          <a href="index.html" class="hover:text-[#2C5EAD] transition-colors">Beranda</a>
+          <a href="index.html#tentang" class="hover:text-[#2C5EAD] transition-colors"
+            >Tentang Kami</a
+          >
+          <a href="index.html#layanan" class="hover:text-[#2C5EAD] transition-colors"
+            >Rumah Bagi Kreator</a
+          >
+          <a href="index.html#artikel" class="hover:text-[#2C5EAD] transition-colors"
+            >Artikel</a
+          >
+        </nav>
+
+        <!-- CTA button -->
+        <div class="hidden md:block">
+          <a
+            href="https://wa.me/6285212345678"
+            target="_blank"
+            class="inline-block px-6 py-2.5 bg-[#2C5EAD] text-white text-[13px] font-bold rounded-xl border-2 border-black shadow-[3.5px_3.5px_0px_0px_#000000] hover:translate-x-[1.5px] hover:translate-y-[1.5px] hover:shadow-[2px_2px_0px_0px_#000000] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150"
+          >
+            Hubungi Kami
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          id="menu-btn"
+          class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-50 focus:outline-none"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3"
+      >
+        <a
+          href="index.html"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#2C5EAD] font-semibold text-sm"
+          >Beranda</a
+        >
+        <a
+          href="index.html#tentang"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#2C5EAD] font-semibold text-sm"
+          >Tentang Kami</a
+        >
+        <a
+          href="index.html#layanan"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#2C5EAD] font-semibold text-sm"
+          >Rumah Bagi Kreator</a
+        >
+        <a
+          href="index.html#artikel"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#2C5EAD] font-semibold text-sm"
+          >Artikel</a
+        >
+        <a
+          href="https://wa.me/6285212345678"
+          target="_blank"
+          class="block text-center w-full px-5 py-2.5 bg-[#2C5EAD] text-white font-bold rounded-xl border-2 border-black shadow-[3.5px_3.5px_0px_0px_#000000] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150 text-sm"
+        >
+          Hubungi Kami
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN DETAIL CONTENT -->
+    <main class="flex-grow py-12 md:py-16 bg-slate-50/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Back Link -->
+        <a
+          href="index.html#artikel"
+          class="inline-flex items-center text-slate-500 hover:text-[#2C5EAD] text-xs font-bold mb-8 transition-colors group"
+        >
+          <i data-lucide="arrow-left" class="w-4 h-4 mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+          Kembali ke Artikel
+        </a>
+
+        <!-- Content Grid -->
+        <div id="article-container" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Article Main Body (8 Columns) -->
+          <div class="lg:col-span-8 bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-sm">
+            <div class="flex items-center space-x-2.5 mb-4">
+              <span class="bg-sky-100 text-[#2C5EAD] text-[10px] font-bold px-2.5 py-1 rounded">NEW</span>
+              <span id="detail-date" class="text-xs text-slate-400 font-bold"></span>
+            </div>
+            
+            <h1 id="detail-title" class="font-outfit font-black text-2xl sm:text-4xl text-slate-900 tracking-tight leading-tight mb-8">
+              <!-- Dynamically Loaded -->
+            </h1>
+
+            <div class="aspect-video w-full rounded-2xl overflow-hidden mb-8 border border-slate-100 shadow-inner bg-slate-100">
+              <img id="detail-img" src="" alt="" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Long Text Content Container -->
+            <div id="detail-body" class="text-slate-650 text-base leading-relaxed space-y-6 font-medium text-justify">
+              <!-- Dynamically Loaded -->
+            </div>
+          </div>
+
+          <!-- Article Sidebar (4 Columns) -->
+          <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
+            <!-- Sidebar Card: Popular Articles -->
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm">
+              <h3 class="font-outfit font-extrabold text-slate-800 text-lg mb-4 pb-3 border-b border-slate-100">
+                Artikel Lainnya
+              </h3>
+              <div id="sidebar-articles" class="space-y-4">
+                <!-- Dynamically Loaded -->
+              </div>
+            </div>
+
+            <!-- Sidebar Card: CTA Business -->
+            <div class="bg-[#2C5EAD] rounded-3xl p-6 text-white shadow-md relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full translate-x-12 -translate-y-12"></div>
+              <h3 class="font-outfit font-extrabold text-xl mb-2 relative z-10">
+                Kembangkan Bisnis Anda
+              </h3>
+              <p class="text-xs text-blue-100 leading-relaxed mb-6 relative z-10">
+                Hubungi kami sekarang untuk mendapatkan konsultasi gratis mengenai strategi pemasaran, kampanye influencer, dan e-commerce.
+              </p>
+              <a
+                href="https://wa.me/6285212345678"
+                target="_blank"
+                class="block text-center w-full py-3 bg-white text-[#2C5EAD] font-bold text-xs rounded-xl shadow-md hover:bg-slate-50 transition-colors relative z-10"
+              >
+                Konsultasi WhatsApp
+              </a>
+            </div>
+          </aside>
+
+        </div>
+
+        <!-- 404/Not Found State (hidden by default) -->
+        <div id="not-found-container" class="hidden text-center py-20 bg-white border border-slate-200 rounded-3xl p-8 max-w-xl mx-auto shadow-sm">
+          <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="alert-circle" class="w-8 h-8"></i>
+          </div>
+          <h2 class="font-outfit font-extrabold text-2xl text-slate-800 mb-3">Artikel Tidak Ditemukan</h2>
+          <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+            Maaf, artikel yang Anda cari tidak tersedia atau telah dihapus. Silakan kembali ke halaman utama untuk melihat informasi menarik lainnya.
+          </p>
+          <a href="index.html" class="inline-block px-6 py-3 bg-[#2C5EAD] text-white text-xs font-bold rounded-xl shadow-md hover:bg-opacity-95 transition-all">
+            Kembali ke Beranda
+          </a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#2C5EAD] text-white/70 py-12 border-t border-slate-850">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <!-- Col 1: Logo/Desc -->
+        <div class="space-y-4">
+          <a href="index.html" class="flex items-center space-x-2 text-white">
+            <img
+              src="assets/ICON-BISAMEDIA-MONOKROM1.png"
+              alt="Logo PT. BISA MEDIA GROUP"
+              class="h-12 w-auto object-contain rounded-lg"
+            />
+            <span class="font-outfit font-black text-sm tracking-tight"
+              >PT. BISA MEDIA GROUP</span
+            >
+          </a>
+          <!-- alamat -->
+          <!-- Col 4: Contact & Social -->
+          <div>
+            <h4
+              class="text-white font-bold text-xs uppercase tracking-wider mb-4"
+            >
+              Alamat:
+            </h4>
+            <p class="text-xs mb-4 leading-relaxed">
+              Perum Sirnagalih Kencana Sirnagalih, Kec. Indihiang, Kab.
+              Tasikmalaya, Jawa Barat 46151
+            </p>
+            <h4
+              class="text-white font-bold text-xs uppercase tracking-wider mb-2"
+            >
+              Kontak:
+            </h4>
+            <p class="text-xs mb-1">+62 852-1234-5678</p>
+            <p class="text-xs mb-4">bisa@gmail.com</p>
+            <div class="flex space-x-3">
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/6285212345678"
+                target="_blank"
+                class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+                title="WhatsApp"
+              >
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+                title="Facebook"
+              >
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.19792 21.5H13.1979V13.5H16.1979L16.6979 9.5H13.1979V7.5C13.1979 6.5 13.6979 5.5 15.1979 5.5H16.6979V1.5H13.1979C9.69792 1.5 7.19792 3.5 7.19792 7.5V9.5H4.19792V13.5H7.19792V21.5H9.19792Z"
+                  />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+                title="Instagram"
+              >
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
+              </a>
+              <!-- Email -->
+              <a
+                href="mailto:bisa@gmail.com"
+                class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+                title="Email"
+              >
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4
+            class="text-white font-bold text-xs uppercase tracking-wider mb-4"
+          >
+            Navigasi
+          </h4>
+          <ul class="space-y-2 text-xs">
+            <li>
+              <a href="index.html" class="hover:text-white transition-colors">Beranda</a>
+            </li>
+            <li>
+              <a href="index.html#tentang" class="hover:text-white transition-colors"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a href="index.html#layanan" class="hover:text-white transition-colors"
+                >Rumah Bagi Kreator</a
+              >
+            </li>
+            <li>
+              <a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Official Partner -->
+        <div>
+          <h4
+            class="text-white font-bold text-xs uppercase tracking-wider mb-4"
+          >
+            Official Partner
+          </h4>
+          <p class="text-xs leading-relaxed mb-3">BISA.AI Ekosistem & TAMPIL</p>
+          <div
+            class="inline-block px-3 py-1.5 bg-white/10 rounded-lg text-[10px] font-bold text-white uppercase tracking-wider"
+          >
+            Official Partner
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 pt-6 border-t border-white/10 text-center text-[10px] tracking-wide text-white/50"
+      >
+        <p>&copy; 2026 PT. BISA MEDIA GROUP. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Articles Data
+      const articlesData = [
+        {
+          title: "Pedoman Etika dan Perilaku Kreator",
+          date: "18 Juni 2026",
+          image: "assets/hero_banner.png",
+          content: `
+            <p class="mb-4">Prioritas kami adalah mempertahankan lingkungan yang aman dan ramah bagi semua orang di TikTok. Kami mengharapkan semua kreator agar mematuhi Panduan Komunitas, Ketentuan Layanan, dan ketentuan kreator atau program lain yang telah disepakati, sehingga kita semua dapat tetap terlindungi dan terus membina komunitas di platform kami.</p>
+            
+            <h3 class="font-bold text-slate-800 text-lg mt-6 mb-3">Mengakses Program Kreator TikTok</h3>
+            <p class="mb-4">Semua kreator harus mematuhi Pedoman Etika dan Perilaku Kreator untuk berpartisipasi dalam "Program Kreator". TikTok menawarkan "Program Kreator", fitur, acara, dan kampanye, seperti pengelolaan kreator dan aktivitas promosi, yang mendukung dan memberikan reward kepada Anda karena telah memposting konten berkualitas tinggi. Ini termasuk "Program Kreator" kami, seperti Creator Rewards Program, TikTok One, Langganan, Pemberian Hadiah LIVE, TikTok Shop, dan lainnya! Akses ke program ini adalah hak istimewa, bukan hak dasar. Oleh karena itu, semua pengguna harus mematuhi Pedoman Perilaku Kreator (dijelaskan di bawah) untuk berpartisipasi dalam Program Kreator.</p>
+            
+            <h3 class="font-bold text-slate-800 text-lg mt-6 mb-3">Pedoman Etika dan Perilaku Kreator</h3>
+            <p class="mb-4">Sebagai kreator, visibilitas Anda dapat memberikan banyak pengaruh. Jadi, kami mengharapkan Anda untuk berperilaku di dalam dan di luar platform kami dengan cara yang tidak menimbulkan potensi bahaya bagi orang lain atau membahayakan keselamatan pengguna kami. Ini termasuk perilaku yang cenderung merusak integritas TikTok, afiliasinya, mitranya, pemasoknya, atau pelanggannya.</p>
+            <p class="mb-4">Perilaku yang dilarang dalam Pedoman Etika dan Perilaku Kreator, baik di dalam dan di luar platform, meliputi:</p>
+            
+            <ul class="list-disc pl-5 mb-4 space-y-2">
+              <li><strong>Perundungan atau Pelecehan:</strong> Merundung atau melecehkan orang lain, dapat berupa pelecehan seksual, penguntitan, doksing, pemerasan, atau ancaman fisik, atau mengejek korban tragedi.</li>
+              <li><strong>Perilaku Berbahaya atau Tindak Kekerasan:</strong> Mempromosikan, mendorong, atau terlibat dalam perilaku yang dapat membahayakan orang lain, hewan, atau melibatkan perusakan lingkungan. Ini termasuk memprovokasi kekerasan, mengorganisasi aktivitas berbahaya atau perilaku imitatif berbahaya, kekejaman terhadap hewan, eksploitasi manusia, atau membahayakan keselamatan dan kesejahteraan anak di bawah umur.</li>
+              <li><strong>Pelecehan Seksual:</strong> Mempromosikan, mendukung, atau terlibat dalam pelecehan seksual, termasuk pemerkosaan, pembujukan terhadap anak di bawah umur, dan pemerasan atau ancaman untuk membagikan gambar intim tanpa persetujuan.</li>
+              <li><strong>Mencelakai Diri Sendiri:</strong> Mempromosikan atau mendukung tindakan menyakiti diri sendiri, termasuk melukai diri sendiri, hoaks tentang bunuh diri, gangguan makan, atau mengumbar partisipasi dalam aktivitas yang mengancam jiwa.</li>
+              <li><strong>Perilaku dan Ujaran Kebencian:</strong> Mempromosikan atau mendukung ujaran kebencian atau ideologi kebencian, atau keanggotaan dalam organisasi kebencian.</li>
+              <li><strong>Aktivitas Kriminal dan Organisasi Ekstremis dengan Kekerasan:</strong> Keanggotaan organisasi kriminal atau ekstremis dengan kekerasan, atau partisipasi dalam aktivitas kriminal atau penipuan, seperti perdagangan barang ilegal atau palsu, penyuapan, perjudian ilegal, penyediaan zat yang diatur dalam undang-undang kepada anak di bawah umur, pelanggaran hak kekayaan intelektual, atau melakukan tindak kriminal serius.</li>
+              <li><strong>Eksploitasi Peristiwa Tragis:</strong> Mengeksploitasi tragedi atau konflik pemicu trauma yang sedang berlangsung, termasuk membuat klaim palsu, atau menyajikan topik sensitif dengan cara yang menghasut atau memecah belah untuk mendorong pengguna mengirim hadiah.</li>
+              <li><strong>Misinformasi dan Perilaku Menipu:</strong> Berpartisipasi dalam aktivitas yang melibatkan spam, misinformasi, penipuan dan scam, pernyataan palsu, engagement palsu, atau permintaan engagement atau hadiah yang menyesatkan.</li>
+              <li><strong>Manipulasi dan Pengelakan Platform:</strong> Terlibat dalam aktivitas yang dimaksudkan untuk mendapatkan keuntungan secara tidak adil atau merugikan orang lain di TikTok. Ini termasuk aktivitas seperti kolusi, kecurangan, DDoSing, penyalahgunaan beberapa akun, atau penggunaan VPN untuk mengelabui sistem kami.</li>
+            </ul>
+            
+            <p class="mb-4">Pelanggaran terhadap Pedoman Etika dan Perilaku Kreator dapat menyebabkan pembatasan untuk mengikuti program manajemen kreator kami (jika berlaku) dan partisipasi dalam aktivitas promosi terkait. Untuk pelanggaran berat, kami dapat membatasi sementara akses Anda ke Program Kreator kami selama tiga bulan, termasuk program dan aktivitas monetisasi. Setelah peninjauan, pembatasan ini dapat tetap diberlakukan atau dicabut. Untuk perilaku yang keterlaluan, pembatasan dapat bersifat permanen.</p>
+            <p class="mb-4">Jika kami menemukan klaim yang dapat diverifikasi terkait perilaku Anda di dalam atau di luar platform kami, seperti catatan publik, tuntutan pidana, putusan bersalah, berita yang kredibel, postingan media sosial, atau pengakuan diri atas pelanggaran, kami menggunakan informasi tersebut untuk menentukan apakah Anda telah melanggar Pedoman Etika dan Perilaku Kreator.</p>
+            <p class="mb-4">Sebagaimana dijelaskan dalam Panduan Komunitas dan Ketentuan Layanan kami, kami juga dapat menangguhkan atau membatasi secara permanen akun TikTok karena melanggar kebijakan kami. Semua tindakan penegakan yang diambil berdasarkan Pedoman Etika dan Perilaku Kreator akan berlaku untuk partisipasi di Program Kreator mendatang dan tidak akan membatasi kompensasi kontraktual dari engagement sebelumnya.</p>
+            <p class="mb-4">Kami dapat menggunakan penilaian kami untuk menentukan apakah perilaku kreator mengancam keselamatan komunitas kami atau menunjukkan salah satu perilaku yang disebutkan di atas. Jika kami menemukan pelanggaran tetapi kami meyakini bahwa akun tersebut tidak lagi berbahaya atau berisiko merusak TikTok, kami dapat memilih untuk tidak menangguhkan atau menghapus aksesnya ke Program Kreator, atau untuk memulihkan akses jika sebelumnya telah dihapus. Kami berhak meninjau akun dan konten secara berkala untuk memastikan bahwa akun dan konten tersebut memenuhi standar ini.</p>
+            <p class="mb-4">Jika Anda yakin akun Anda telah dibatasi karena kesalahan, Anda dapat mengajukan banding atas keputusan tersebut.</p>
+          `
+        },
+        {
+          title: "Optimasi Algoritma Video Vertikal Terkini 2026",
+          date: "15 Juni 2026",
+          image: "assets/hero_banner.png",
+          content: `
+            <p class="mb-4">Algoritma platform video pendek (seperti TikTok dan Instagram Reels) terus berevolusi untuk memprioritaskan retensi penonton dan interaksi berkualitas tinggi. Untuk memastikan video Anda masuk ke FYP (For You Page), Anda harus mengoptimalkan detik-detik pertama konten Anda.</p>
+            <p class="mb-4">Hook 3 detik pertama sangat menentukan apakah penonton akan lanjut menonton atau langsung menggulir (swipe). Gunakan judul yang menarik perhatian, visual yang tajam, atau pertanyaan yang membuat penasaran.</p>
+            <p class="mb-4">Selain hook, struktur video 15-30 detik juga harus padat informasi. Hindari bertele-tele dan gunakan backsound yang sedang tren serta teks overlay yang dinamis agar konten lebih mudah dipahami bahkan tanpa suara.</p>
+            <p class="mb-4">Konsistensi dan pemahaman analitik mendalam juga merupakan kunci sukses. Pahami kapan audiens Anda paling aktif dan lakukan eksperimen A/B testing secara berkala.</p>
+          `
+        },
+        {
+          title: "Mengapa Video Pendek Lebih Unggul Menjual Produk",
+          date: "12 Juni 2026",
+          image: "assets/hero_banner.png",
+          content: `
+            <p class="mb-4">Perilaku konsumen saat ini, terutama generasi milenial dan Gen Z, cenderung menyukai konten visual yang dinamis, cepat saji, dan otentik. Video pendek memberikan pengalaman belanja yang lebih imersif dibandingkan dengan foto statis.</p>
+            <p class="mb-4">Melalui video pendek, penonton dapat melihat secara nyata detail produk, cara penggunaan (demo), serta hasil akhir yang diberikan. Hal ini sangat meningkatkan rasa percaya konsumen sebelum memutuskan untuk membeli.</p>
+            <p class="mb-4">Ditambah dengan fitur e-commerce terintegrasi (seperti keranjang kuning TikTok), proses dari penemuan produk hingga pembayaran (checkout) dapat terjadi dalam hitungan detik di dalam satu aplikasi saja, meminimalkan potensi pembatalan transaksi.</p>
+            <p class="mb-4">Mengintegrasikan strategi bercerita (storytelling) yang kuat ke dalam promosi produk Anda akan menghasilkan tingkat konversi yang jauh lebih tinggi dan loyalitas pelanggan yang bertahan lama.</p>
+          `
+        }
+      ];
+
+      // Get query parameter 'id'
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = parseInt(urlParams.get("id"));
+
+      const articleContainer = document.getElementById("article-container");
+      const notFoundContainer = document.getElementById("not-found-container");
+
+      if (isNaN(articleId) || articleId < 0 || articleId >= articlesData.length) {
+        // Show 404
+        articleContainer.classList.add("hidden");
+        notFoundContainer.classList.remove("hidden");
+      } else {
+        const article = articlesData[articleId];
+
+        // Populate elements
+        document.title = `${article.title} - PT. BISA MEDIA GROUP`;
+        document.getElementById("detail-date").textContent = article.date;
+        document.getElementById("detail-title").textContent = article.title;
+        
+        const imgEl = document.getElementById("detail-img");
+        imgEl.src = article.image;
+        imgEl.alt = article.title;
+
+        document.getElementById("detail-body").innerHTML = article.content;
+
+        // Populate other articles in sidebar
+        const sidebarContainer = document.getElementById("sidebar-articles");
+        articlesData.forEach((item, index) => {
+          if (index !== articleId) {
+            const sideEl = document.createElement("a");
+            sideEl.href = `article.html?id=${index}`;
+            sideEl.className = "flex items-start space-x-3.5 group border-b border-slate-100 pb-3 last:border-b-0 last:pb-0 block";
+            sideEl.innerHTML = `
+              <div class="w-16 h-12 rounded-lg bg-slate-100 overflow-hidden flex-shrink-0 border border-slate-100">
+                <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover">
+              </div>
+              <div class="flex-1">
+                <span class="text-[9px] text-[#2C5EAD] font-bold block mb-0.5">${item.date}</span>
+                <h4 class="text-xs font-bold text-slate-800 leading-snug group-hover:text-[#2C5EAD] transition-colors line-clamp-2">
+                  ${item.title}
+                </h4>
+              </div>
+            `;
+            sidebarContainer.appendChild(sideEl);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

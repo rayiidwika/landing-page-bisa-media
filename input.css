@@ -6,26 +6,32 @@
   .figma-shadow {
     box-shadow: 0px 4px 24px rgba(44, 94, 173, 0.06);
   }
+
   .figma-border {
     border: 1px solid #E2E8F0;
   }
+
   .figma-blue-border {
     border: 1.5px solid #2C5EAD;
   }
+
   .logo-ticker-container {
     mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
   }
+
   .brutalist-btn {
     background-color: #2C5EAD;
     border: 2px solid #000000;
     box-shadow: 0px 4px 0px 0px #000000;
     transition: all 0.2s ease;
   }
+
   .brutalist-btn:hover {
     transform: translate(0px, 2px);
     box-shadow: 0px 2px 0px 0px #000000;
   }
+
   .brutalist-btn:active {
     transform: translate(0px, 4px);
     box-shadow: 0px 0px 0px 0px #000000;
@@ -36,6 +42,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -54,6 +61,6 @@ body {
 
 .blue-grid-bg {
   background-image: linear-gradient(to right, rgba(44, 94, 173, 0.04) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(44, 94, 173, 0.04) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(44, 94, 173, 0.04) 1px, transparent 1px);
   background-size: 50px 50px;
 }
