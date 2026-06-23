@@ -54,14 +54,59 @@
         <nav
           class="hidden md:flex items-center space-x-8 text-[14px] font-bold text-slate-600"
         >
-          <a href="index.html" class="hover:text-[#2C5EAD] transition-colors">Beranda</a>
-          <a href="index.html#tentang" class="hover:text-[#2C5EAD] transition-colors"
+          <a href="index.html" class="hover:text-[#1591DC] transition-colors">Beranda</a>
+          <a href="index.html#tentang" class="hover:text-[#1591DC] transition-colors"
             >Tentang Kami</a
           >
-          <a href="index.html#layanan" class="hover:text-[#2C5EAD] transition-colors"
+          <a href="index.html#layanan" class="hover:text-[#1591DC] transition-colors"
             >Rumah Bagi Kreator</a
           >
-          <a href="index.html#artikel" class="hover:text-[#2C5EAD] transition-colors"
+
+          <!-- Support & Experience Dropdown -->
+          <div class="relative group" id="support-dropdown-wrap">
+            <button
+              class="flex items-center gap-1 hover:text-[#1591DC] transition-colors focus:outline-none"
+              id="support-nav-btn"
+            >
+              Support &amp; Experience
+              <svg
+                class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"
+                fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown Panel -->
+            <div
+              class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-56 bg-white rounded-xl shadow-[0_10px_25px_rgba(0,0,0,0.08)] border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 overflow-hidden"
+            >
+              <div class="p-1 space-y-0.5">
+                <!-- TAP -->
+                <a
+                  href="partnership.html?type=tap"
+                  class="block px-4 py-2.5 hover:bg-[#1591DC]/5 rounded-lg transition-all duration-200 group/item"
+                >
+                  <p class="text-[13px] font-bold text-slate-800 group-hover/item:text-[#1591DC] transition-colors tracking-wide">TAP</p>
+                  <p class="text-[10px] text-slate-400 group-hover/item:text-slate-500 transition-colors mt-0.5 font-normal tracking-wide">TikTok Affiliate Program</p>
+                </a>
+
+                <div class="mx-3 border-t border-slate-100"></div>
+
+                <!-- TSP -->
+                <a
+                  href="partnership.html?type=tsp"
+                  class="block px-4 py-2.5 hover:bg-[#1591DC]/5 rounded-lg transition-all duration-200 group/item"
+                >
+                  <p class="text-[13px] font-bold text-slate-800 group-hover/item:text-[#1591DC] transition-colors tracking-wide">TSP</p>
+                  <p class="text-[10px] text-slate-400 group-hover/item:text-slate-500 transition-colors mt-0.5 font-normal tracking-wide">TikTok Shop Partner</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="index.html#artikel" class="hover:text-[#1591DC] transition-colors"
             >Artikel</a
           >
         </nav>
@@ -69,7 +114,7 @@
         <!-- CTA button -->
         <div class="hidden md:block">
           <a
-            href="https://wa.me/6285212345678"
+            href="https://wa.me/+6285940671241"
             target="_blank"
             class="inline-block px-6 py-2.5 bg-[#2C5EAD] text-white text-[13px] font-bold rounded-xl border-2 border-black shadow-[3.5px_3.5px_0px_0px_#000000] hover:translate-x-[1.5px] hover:translate-y-[1.5px] hover:shadow-[2px_2px_0px_0px_#000000] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150"
           >
@@ -93,26 +138,56 @@
       >
         <a
           href="index.html"
-          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#2C5EAD] font-semibold text-sm"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
           >Beranda</a
         >
         <a
           href="index.html#tentang"
-          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#2C5EAD] font-semibold text-sm"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
           >Tentang Kami</a
         >
         <a
           href="index.html#layanan"
-          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#2C5EAD] font-semibold text-sm"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
           >Rumah Bagi Kreator</a
         >
+        <!-- Mobile: Support & Experience Accordion -->
+        <div class="border-t border-slate-100 pt-1">
+          <button
+            id="mobile-support-btn"
+            onclick="document.getElementById('mobile-support-submenu').classList.toggle('hidden')"
+            class="w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >
+            <span>Support &amp; Experience</span>
+            <svg id="mobile-support-chevron" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="mobile-support-submenu" class="hidden bg-slate-50 border-t border-slate-100 divide-y divide-slate-100">
+            <a
+              href="partnership.html?type=tap"
+              class="block px-5 py-2.5 hover:bg-[#1591DC]/5 hover:text-[#1591DC] transition-colors group"
+            >
+              <p class="font-bold text-sm text-slate-800 group-hover:text-[#1591DC]">TAP</p>
+              <p class="text-[11px] text-slate-500 font-normal">TikTok Affiliate Program</p>
+            </a>
+            <a
+              href="partnership.html?type=tsp"
+              class="block px-5 py-2.5 hover:bg-[#1591DC]/5 hover:text-[#1591DC] transition-colors group"
+            >
+              <p class="font-bold text-sm text-slate-800 group-hover:text-[#1591DC]">TSP</p>
+              <p class="text-[11px] text-slate-500 font-normal">TikTok Shop Partner</p>
+            </a>
+          </div>
+        </div>
         <a
           href="index.html#artikel"
-          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#2C5EAD] font-semibold text-sm"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
           >Artikel</a
         >
+
         <a
-          href="https://wa.me/6285212345678"
+          href="https://wa.me/+6285940671241"
           target="_blank"
           class="block text-center w-full px-5 py-2.5 bg-[#2C5EAD] text-white font-bold rounded-xl border-2 border-black shadow-[3.5px_3.5px_0px_0px_#000000] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150 text-sm"
         >
@@ -130,7 +205,7 @@
           class="inline-flex items-center text-slate-500 hover:text-[#2C5EAD] text-xs font-bold mb-8 transition-colors group"
         >
           <i data-lucide="arrow-left" class="w-4 h-4 mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
-          Kembali ke Artikel
+          Kembali 
         </a>
 
         <!-- Content Grid -->
@@ -179,7 +254,7 @@
                 Hubungi kami sekarang untuk mendapatkan konsultasi gratis mengenai strategi pemasaran, kampanye influencer, dan e-commerce.
               </p>
               <a
-                href="https://wa.me/6285212345678"
+                href="https://wa.me/+6285940671241"
                 target="_blank"
                 class="block text-center w-full py-3 bg-white text-[#2C5EAD] font-bold text-xs rounded-xl shadow-md hover:bg-slate-50 transition-colors relative z-10"
               >
@@ -241,12 +316,12 @@
             >
               Kontak:
             </h4>
-            <p class="text-xs mb-1">+62 852-1234-5678</p>
+            <p class="text-xs mb-1">+62 859-4067-1241</p>
             <p class="text-xs mb-4">bisa@gmail.com</p>
             <div class="flex space-x-3">
               <!-- WhatsApp -->
               <a
-                href="https://wa.me/6285212345678"
+                href="https://wa.me/+6285940671241"
                 target="_blank"
                 class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
                 title="WhatsApp"

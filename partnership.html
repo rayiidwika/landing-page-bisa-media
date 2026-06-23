@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partnership - PT. BISA MEDIA GROUP</title>
+    <meta
+      name="description"
+      content="Program Kemitraan Resmi PT. BISA MEDIA GROUP untuk kreator, affiliate, brand lokal, dan e-commerce."
+    />
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Production Tailwind CSS & Custom Styles -->
+    <link href="assets/style.css" rel="stylesheet" />
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body class="bg-white overflow-x-hidden antialiased flex flex-col min-h-screen">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img
+            src="assets/ICON-BISAMEDIA.png"
+            alt="Logo PT. BISA MEDIA GRUP"
+            class="h-12 w-auto object-contain rounded-lg mr-2"
+          />
+          <div class="flex flex-col">
+            <span class="font-outfit font-black text-sm tracking-tight text-[#2C5EAD] leading-none"
+              >PT. BISA MEDIA GRUP</span
+            >
+            <span class="text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+              >Grow Together</span
+            >
+          </div>
+        </a>
+
+        <!-- Nav Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-[14px] font-bold text-slate-600">
+          <a href="index.html" class="hover:text-[#1591DC] transition-colors">Beranda</a>
+          <a href="index.html#tentang" class="hover:text-[#1591DC] transition-colors">Tentang Kami</a>
+          <a href="index.html#layanan" class="hover:text-[#1591DC] transition-colors">Rumah Bagi Kreator</a>
+
+          <!-- Support & Experience Dropdown -->
+          <div class="relative group" id="support-dropdown-wrap">
+            <button
+              class="flex items-center gap-1 hover:text-[#1591DC] transition-colors focus:outline-none"
+              id="support-nav-btn"
+            >
+              Support &amp; Experience
+              <svg
+                class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"
+                fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown Panel -->
+            <div
+              class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-56 bg-white rounded-xl shadow-[0_10px_25px_rgba(0,0,0,0.08)] border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 overflow-hidden"
+            >
+              <div class="p-1 space-y-0.5">
+                <!-- TAP -->
+                <a
+                  href="partnership.html?type=tap"
+                  class="block px-4 py-2.5 hover:bg-[#1591DC]/5 rounded-lg transition-all duration-200 group/item"
+                >
+                  <p class="text-[13px] font-bold text-slate-800 group-hover/item:text-[#1591DC] transition-colors tracking-wide">TAP</p>
+                  <p class="text-[10px] text-slate-400 group-hover/item:text-slate-500 transition-colors mt-0.5 font-normal tracking-wide">TikTok Affiliate Program</p>
+                </a>
+
+                <div class="mx-3 border-t border-slate-100"></div>
+
+                <!-- TSP -->
+                <a
+                  href="partnership.html?type=tsp"
+                  class="block px-4 py-2.5 hover:bg-[#1591DC]/5 rounded-lg transition-all duration-200 group/item"
+                >
+                  <p class="text-[13px] font-bold text-slate-800 group-hover/item:text-[#1591DC] transition-colors tracking-wide">TSP</p>
+                  <p class="text-[10px] text-slate-400 group-hover/item:text-slate-500 transition-colors mt-0.5 font-normal tracking-wide">TikTok Shop Partner</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="index.html#artikel" class="hover:text-[#1591DC] transition-colors">Artikel</a>
+        </nav>
+
+        <!-- CTA button -->
+        <div class="hidden md:block">
+          <a
+            href="https://wa.me/+6285940671241"
+            target="_blank"
+            class="inline-block px-6 py-2.5 bg-[#2C5EAD] text-white text-[13px] font-bold rounded-xl border-2 border-black shadow-[3.5px_3.5px_0px_0px_#000000] hover:translate-x-[1.5px] hover:translate-y-[1.5px] hover:shadow-[2px_2px_0px_0px_#000000] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150"
+          >
+            Hubungi Kami
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          id="menu-btn"
+          class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-50 focus:outline-none"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3">
+        <a
+          href="index.html"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >Beranda</a
+        >
+        <a
+          href="index.html#tentang"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >Tentang Kami</a
+        >
+        <a
+          href="index.html#layanan"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >Rumah Bagi Kreator</a
+        >
+        <!-- Mobile: Support & Experience Accordion -->
+        <div class="border-t border-slate-100 pt-1">
+          <button
+            id="mobile-support-btn"
+            onclick="document.getElementById('mobile-support-submenu').classList.toggle('hidden')"
+            class="w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >
+            <span>Support &amp; Experience</span>
+            <svg id="mobile-support-chevron" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="mobile-support-submenu" class="hidden bg-slate-50 border-t border-slate-100 divide-y divide-slate-100">
+            <a
+              href="partnership.html?type=tap"
+              class="block px-5 py-2.5 hover:bg-[#1591DC]/5 hover:text-[#1591DC] transition-colors group"
+            >
+              <p class="font-bold text-sm text-slate-800 group-hover:text-[#1591DC]">TAP</p>
+              <p class="text-[11px] text-slate-500 font-normal">TikTok Affiliate Program</p>
+            </a>
+            <a
+              href="partnership.html?type=tsp"
+              class="block px-5 py-2.5 hover:bg-[#1591DC]/5 hover:text-[#1591DC] transition-colors group"
+            >
+              <p class="font-bold text-sm text-slate-800 group-hover:text-[#1591DC]">TSP</p>
+              <p class="text-[11px] text-slate-500 font-normal">TikTok Shop Partner</p>
+            </a>
+          </div>
+        </div>
+        <a
+          href="index.html#artikel"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >Artikel</a
+        >
+
+        <a
+          href="https://wa.me/+6285940671241"
+          target="_blank"
+          class="block text-center w-full px-5 py-2.5 bg-[#2C5EAD] text-white font-bold rounded-xl border-2 border-black shadow-[3.5px_3.5px_0px_0px_#000000] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150 text-sm"
+        >
+          Hubungi Kami
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN DETAIL CONTENT -->
+    <main class="flex-grow py-12 md:py-16 bg-slate-50/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Back Link -->
+        <a
+          href="index.html#tiktok-programs"
+          class="inline-flex items-center text-slate-500 hover:text-[#2C5EAD] text-xs font-bold mb-8 transition-colors group"
+        >
+          <i data-lucide="arrow-left" class="w-4 h-4 mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+          Kembali 
+        </a>
+
+        <!-- Content Grid -->
+        <div id="content-grid" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Partnership Main Content -->
+          <div class="lg:col-span-8 bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-sm">
+            <div class="flex items-center space-x-2.5 mb-4">
+              <span id="partner-badge" class="text-[10px] font-bold px-2.5 py-1 rounded"></span>
+              <span id="partner-subbadge" class="text-xs text-slate-400 font-bold"></span>
+            </div>
+            
+            <h1 id="partner-title" class="font-outfit font-black text-2xl sm:text-4xl text-slate-900 tracking-tight leading-tight mb-6"></h1>
+
+            <!-- Dynamic Banner Representation -->
+            <div class="aspect-video w-full rounded-2xl overflow-hidden mb-8 border border-slate-100 shadow-inner bg-slate-900 flex items-center justify-center">
+              <div class="p-8 text-center text-white space-y-4">
+                <div id="hero-icon-container" class="w-20 h-20 mx-auto rounded-full flex items-center justify-center text-white mb-2 shadow-lg"></div>
+                <h3 id="hero-title" class="font-outfit font-black text-3xl tracking-tight"></h3>
+                <p id="hero-subtitle" class="text-sm text-blue-100 max-w-md mx-auto"></p>
+              </div>
+            </div>
+
+            <!-- Long Text Content Container -->
+            <div class="text-slate-650 text-base leading-relaxed space-y-6 font-medium text-justify">
+              <p id="partner-intro"></p>
+              <h3 id="partner-bullet-title" class="font-outfit font-extrabold text-xl text-slate-900 mt-8 mb-4"></h3>
+              <p id="partner-bullet-intro"></p>
+              <ul id="partner-bullet-list" class="list-disc pl-5 space-y-2"></ul>
+              <p id="partner-outro" class="mt-4"></p>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm">
+              <h3 class="font-outfit font-extrabold text-slate-800 text-lg mb-4 pb-3 border-b border-slate-100">
+                Konsultasi Kemitraan
+              </h3>
+              <p id="sidebar-text" class="text-xs text-slate-500 mb-6 leading-relaxed"></p>
+              <a
+                id="sidebar-btn"
+                href="https://wa.me/+6285940671241"
+                target="_blank"
+                class="block text-center w-full py-3 bg-[#2C5EAD] text-white font-bold text-xs rounded-xl shadow-md hover:bg-opacity-95 transition-all"
+              ></a>
+            </div>
+
+            <div class="bg-slate-900 rounded-3xl p-6 text-white shadow-md relative overflow-hidden">
+              <h3 id="sidebar-cta-title" class="font-outfit font-extrabold text-xl mb-2"></h3>
+              <p id="sidebar-cta-desc" class="text-xs text-slate-350 leading-relaxed mb-6"></p>
+              <a
+                id="sidebar-cta-link"
+                href=""
+                class="block text-center w-full py-3 bg-white text-slate-900 font-bold text-xs rounded-xl shadow-md hover:bg-slate-50 transition-colors"
+              ></a>
+            </div>
+          </aside>
+
+        </div>
+
+        <!-- 404 Container -->
+        <div id="not-found-container" class="hidden text-center py-20 bg-white border border-slate-200 rounded-3xl p-8 max-w-xl mx-auto shadow-sm">
+          <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="alert-circle" class="w-8 h-8"></i>
+          </div>
+          <h2 class="font-outfit font-extrabold text-2xl text-slate-800 mb-3">Layanan Tidak Ditemukan</h2>
+          <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+            Maaf, program kemitraan yang Anda cari tidak tersedia. Silakan kembali ke beranda.
+          </p>
+          <a href="index.html" class="inline-block px-6 py-3 bg-[#2C5EAD] text-white text-xs font-bold rounded-xl shadow-md hover:bg-opacity-95 transition-all">
+            Kembali ke Beranda
+          </a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#2C5EAD] text-white/70 py-12 border-t border-slate-850">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="space-y-4">
+          <a href="index.html" class="flex items-center space-x-2 text-white">
+            <img
+              src="assets/ICON-BISAMEDIA-MONOKROM1.png"
+              alt="Logo PT. BISA MEDIA GROUP"
+              class="h-12 w-auto object-contain rounded-lg"
+            />
+            <span class="font-outfit font-black text-sm tracking-tight">PT. BISA MEDIA GROUP</span>
+          </a>
+          <div>
+            <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Alamat:</h4>
+            <p class="text-xs mb-4 leading-relaxed">
+              Perum Sirnagalih Kencana Sirnagalih, Kec. Indihiang, Kab. Tasikmalaya, Jawa Barat 46151
+            </p>
+            <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-2">Kontak:</h4>
+            <p class="text-xs mb-1">+62 859-4067-1241</p>
+            <p class="text-xs mb-4">bisa@gmail.com</p>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Navigasi</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="index.html#tentang" class="hover:text-white transition-colors">Tentang Kami</a></li>
+            <li><a href="index.html#layanan" class="hover:text-white transition-colors">Rumah Bagi Kreator</a></li>
+            <li><a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Official Partner</h4>
+          <p class="text-xs leading-relaxed mb-3">BISA.AI Ekosistem & TAMPIL</p>
+          <div class="inline-block px-3 py-1.5 bg-white/10 rounded-lg text-[10px] font-bold text-white uppercase tracking-wider">
+            Official Partner
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 pt-6 border-t border-white/10 text-center text-[10px] tracking-wide text-white/50">
+        <p>&copy; 2026 PT. BISA MEDIA GROUP. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- DYNAMIC DATA LOADER -->
+    <script>
+      // Initialize Lucide
+      lucide.createIcons();
+
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      const partnershipsData = {
+        tap: {
+          badge: "PARTNER PROGRAM",
+          badgeColor: "bg-blue-100 text-[#2C5EAD]",
+          subBadge: "Official TikTok Agency Partner",
+          title: "TikTok Agency Partner (TAP)",
+          heroTitle: "TIKTOK AGENCY PARTNER",
+          heroSubtitle: "Tumbuh lebih cepat dengan ekosistem kreator & affiliate resmi dari TikTok.",
+          heroIconBg: "bg-[#2C5EAD]",
+          heroIcon: "sparkles",
+          intro: "Sebagai <strong>TikTok Agency Partner (TAP)</strong> resmi, PT. BISA MEDIA GROUP berkomitmen penuh untuk membangun jembatan emas antara brand lokal/global dengan para kreator affiliate potensial. Program TAP difokuskan untuk mengelola, melatih, serta mensinergikan talenta kreatif di media sosial agar mampu menghasilkan karya promosi yang berdampak nyata pada penjualan.",
+          bulletTitle: "Mengapa Bergabung dengan Program TAP Kami?",
+          bulletIntro: "Melalui program ini, kreator tidak hanya membuat konten biasa, melainkan diarahkan secara profesional dengan strategi matang untuk mendongkrak penjualan produk (GMV).",
+          bullets: [
+            {
+              title: "Mentorship & Pelatihan Eksklusif",
+              desc: "Kelas intensif bersama mentor berpengalaman untuk mempelajari trik algoritma TikTok, penulisan script video, hingga teknik live selling."
+            },
+            {
+              title: "Sinergi dengan Brand Ternama",
+              desc: "Akses langsung ke ratusan sampel produk gratis dari brand-brand ternama yang siap untuk dipromosikan."
+            },
+            {
+              title: "Fasilitas Studio Premium",
+              desc: "Akses studio rekaman dan siaran langsung dengan peralatan kualitas tinggi di area kami."
+            },
+            {
+              title: "Skema Komisi Menjanjikan",
+              desc: "Transparansi penuh dalam perhitungan komisi affiliate serta reward tambahan untuk performa terbaik."
+            }
+          ],
+          outro: "Bergabunglah bersama ribuan kreator sukses lainnya yang telah bertransformasi dari sekadar pembuat konten menjadi partner affiliate profesional bersama PT. BISA MEDIA GROUP.",
+          sidebarText: "Silakan hubungi tim representative kami melalui WhatsApp untuk menjadwalkan sesi interview dan review portofolio media sosial Anda.",
+          sidebarBtn: "Daftar Melalui WhatsApp",
+          sidebarCtaTitle: "Butuh Layanan TSP?",
+          sidebarCtaDesc: "Jika Anda adalah pemilik brand yang membutuhkan pengelolaan live streaming dan operasional TikTok Shop, silakan lihat detail layanan TSP kami.",
+          sidebarCtaLink: "partnership.html?type=tsp",
+          sidebarCtaBtn: "Lihat Detail TSP"
+        },
+        tsp: {
+          badge: "TSP PROGRAM",
+          badgeColor: "bg-cyan-100 text-cyan-700",
+          subBadge: "Official TikTok Shop Partner",
+          title: "TikTok Shop Partner (TSP)",
+          heroTitle: "TIKTOK SHOP PARTNER",
+          heroSubtitle: "Kelola operasional dan tingkatkan omset TikTok Shop brand Anda secara instan.",
+          heroIconBg: "bg-[#00B4D8]",
+          heroIcon: "shopping-bag",
+          intro: "Sebagai <strong>TikTok Shop Partner (TSP)</strong> resmi, PT. BISA MEDIA GROUP menyediakan solusi terpadu dan operasional menyeluruh (End-to-End) untuk membantu seller dan brand menjangkau pasar yang lebih luas di TikTok Shop. Kami menangani seluruh aspek operasional toko digital Anda agar Anda bisa lebih fokus pada pengembangan produk utama.",
+          bulletTitle: "Solusi Lengkap Layanan TSP Kami",
+          bulletIntro: "Layanan kami dirancang khusus untuk memastikan toko TikTok Shop Anda beroperasi dengan performa maksimal setiap hari:",
+          bullets: [
+            {
+              title: "Operasional Live Streaming 24/7",
+              desc: "Didukung oleh host siaran berpengalaman, scriptwriter kreatif, dan peralatan studio visual premium."
+            },
+            {
+              title: "Pengelolaan Toko (Store Management)",
+              desc: "Upload produk teroptimasi SEO, manajemen stok (inventory control), serta layanan pelanggan (CS) responsif."
+            },
+            {
+              title: "Kolaborasi Afiliasi Skala Besar",
+              desc: "Menghubungkan produk Anda dengan ribuan kreator affiliate potensial di jaringan TAP kami."
+            },
+            {
+              title: "Iklan Berbayar & Optimasi Traffic (Ads Management)",
+              desc: "Merancang serta memantau campaign iklan berbayar (TikTok Ads / Shop Ads) untuk memaksimalkan ROI."
+            }
+          ],
+          outro: "Bermitra bersama layanan TSP PT. BISA MEDIA GROUP adalah langkah strategis terbaik untuk melipatgandakan omset penjualan e-commerce Anda secara efisien tanpa boncos.",
+          sidebarText: "Jadwalkan konsultasi gratis hari ini bersama Business Development Manager kami untuk menganalisis potensi TikTok Shop brand Anda.",
+          sidebarBtn: "Hubungi Kami Sekarang",
+          sidebarCtaTitle: "Ingin Bergabung Sebagai Kreator?",
+          sidebarCtaDesc: "Jika Anda adalah kreator affiliate atau influencer yang ingin meningkatkan jangkauan kolaborasi dengan brand, cek program TAP kami.",
+          sidebarCtaLink: "partnership.html?type=tap",
+          sidebarCtaBtn: "Lihat Program TAP"
+        }
+      };
+
+      // Get type parameter from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const partnerType = urlParams.get("type");
+
+      const contentGrid = document.getElementById("content-grid");
+      const notFoundContainer = document.getElementById("not-found-container");
+
+      if (!partnerType || !partnershipsData[partnerType]) {
+        // Show 404
+        contentGrid.classList.add("hidden");
+        notFoundContainer.classList.remove("hidden");
+      } else {
+        const data = partnershipsData[partnerType];
+
+        // Populate metadata title
+        document.title = `${data.title} - PT. BISA MEDIA GROUP`;
+
+        // Badges
+        const badgeEl = document.getElementById("partner-badge");
+        badgeEl.className = `${data.badgeColor} text-[10px] font-bold px-2.5 py-1 rounded`;
+        badgeEl.textContent = data.badge;
+        document.getElementById("partner-subbadge").textContent = data.subBadge;
+
+        // Title
+        document.getElementById("partner-title").textContent = data.title;
+
+        // Banner Hero
+        const iconContainer = document.getElementById("hero-icon-container");
+        iconContainer.className = `${data.heroIconBg} w-20 h-20 mx-auto rounded-full flex items-center justify-center text-white mb-2 shadow-lg`;
+        iconContainer.innerHTML = `<i data-lucide="${data.heroIcon}" class="w-10 h-10"></i>`;
+        
+        document.getElementById("hero-title").textContent = data.heroTitle;
+        document.getElementById("hero-subtitle").textContent = data.heroSubtitle;
+
+        // Body Texts
+        document.getElementById("partner-intro").innerHTML = data.intro;
+        document.getElementById("partner-bullet-title").textContent = data.bulletTitle;
+        document.getElementById("partner-bullet-intro").textContent = data.bulletIntro;
+
+        // Bullets List
+        const listEl = document.getElementById("partner-bullet-list");
+        listEl.innerHTML = "";
+        data.bullets.forEach((item) => {
+          const li = document.createElement("li");
+          li.innerHTML = `<strong>${item.title}:</strong> ${item.desc}`;
+          listEl.appendChild(li);
+        });
+
+        document.getElementById("partner-outro").textContent = data.outro;
+
+        // Sidebar
+        document.getElementById("sidebar-text").textContent = data.sidebarText;
+        document.getElementById("sidebar-btn").textContent = data.sidebarBtn;
+
+        // Sidebar CTA
+        document.getElementById("sidebar-cta-title").textContent = data.sidebarCtaTitle;
+        document.getElementById("sidebar-cta-desc").textContent = data.sidebarCtaDesc;
+        
+        const ctaLinkBtn = document.getElementById("sidebar-cta-link");
+        ctaLinkBtn.href = data.sidebarCtaLink;
+        ctaLinkBtn.textContent = data.sidebarCtaBtn;
+
+        // Re-create lucide icons for dynamically added content
+        lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>
