@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 70">
+  <circle cx="32" cy="35" r="26" fill="#c0392b"/>
+  <circle cx="32" cy="35" r="16" fill="white"/>
+  <text x="32" y="40" font-family="serif" font-weight="900" font-size="12" fill="#c0392b" text-anchor="middle">UB</text>
+  <text x="68" y="26" font-family="'Plus Jakarta Sans',sans-serif" font-weight="900" font-size="12" fill="#1a1a1a" text-anchor="start">Universitas</text>
+  <text x="68" y="42" font-family="'Plus Jakarta Sans',sans-serif" font-weight="900" font-size="12" fill="#c0392b" text-anchor="start">Brawijaya</text>
+</svg>

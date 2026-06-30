@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="100%" height="100%">
+  <g transform="translate(10, 10)">
+    <text x="0" y="26" font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" font-weight="900" font-size="28" letter-spacing="1">
+      <tspan fill="#D91B5C">V</tspan>
+      <tspan fill="#F48220">I</tspan>
+      <tspan fill="#8DC63F">V</tspan>
+      <tspan fill="#00AEEF">A</tspan>
+    </text>
+    <text x="95" y="24" font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" font-weight="500" font-size="12" fill="#64748B">.co.id</text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 70">
+  <circle cx="32" cy="35" r="26" fill="#e74c3c"/>
+  <circle cx="32" cy="35" r="16" fill="white"/>
+  <circle cx="32" cy="35" r="8" fill="#e74c3c"/>
+  <text x="68" y="27" font-family="'Plus Jakarta Sans',sans-serif" font-weight="900" font-size="13" fill="#1a1a1a" text-anchor="start">Universitas</text>
+  <text x="68" y="43" font-family="'Plus Jakarta Sans',sans-serif" font-weight="900" font-size="13" fill="#e74c3c" text-anchor="start">Hasanuddin</text>
+</svg>

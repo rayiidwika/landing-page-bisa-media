@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 70">
+  <rect x="8" y="10" width="44" height="48" rx="4" fill="#27ae60"/>
+  <text x="30" y="38" font-family="serif" font-weight="900" font-size="14" fill="white" text-anchor="middle">IPB</text>
+  <text x="62" y="26" font-family="'Plus Jakarta Sans',sans-serif" font-weight="900" font-size="12" fill="#1a1a1a" text-anchor="start">Institut</text>
+  <text x="62" y="41" font-family="'Plus Jakarta Sans',sans-serif" font-weight="900" font-size="12" fill="#27ae60" text-anchor="start">Pertanian Bogor</text>
+</svg>

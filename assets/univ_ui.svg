@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 70">
+  <circle cx="35" cy="35" r="28" fill="none" stroke="#2C5EAD" stroke-width="3"/>
+  <circle cx="35" cy="35" r="20" fill="#2C5EAD"/>
+  <text x="35" y="40" font-family="serif" font-weight="900" font-size="16" fill="white" text-anchor="middle">UI</text>
+  <text x="75" y="28" font-family="'Plus Jakarta Sans',sans-serif" font-weight="900" font-size="14" fill="#1a1a1a" text-anchor="start">Universitas</text>
+  <text x="75" y="46" font-family="'Plus Jakarta Sans',sans-serif" font-weight="900" font-size="14" fill="#2C5EAD" text-anchor="start">Indonesia</text>
+</svg>
