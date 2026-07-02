@@ -198,13 +198,13 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative bg-slate-50 border-b border-slate-100 py-16 overflow-hidden blue-grid-bg">
-      <div class="absolute top-10 right-10 w-48 h-48 bg-[#2C5EAD]/5 rounded-full blur-3xl -z-10"></div>
-      <div class="absolute bottom-10 left-10 w-48 h-48 bg-sky-200/20 rounded-full blur-3xl -z-10"></div>
+    <section id="artikel-page-hero" class="relative bg-gradient-to-br from-slate-50 to-white border-b border-slate-100 py-16 overflow-hidden">
+      <div class="absolute top-10 right-10 w-48 h-48 bg-slate-200/30 rounded-full blur-3xl -z-10"></div>
+      <div class="absolute bottom-10 left-10 w-48 h-48 bg-slate-100/50 rounded-full blur-3xl -z-10"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span class="inline-flex items-center space-x-2 bg-sky-50 border border-[#2C5EAD]/20 text-[#2C5EAD] text-[10px] font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6">
-          <span class="w-1.5 h-1.5 rounded-full bg-[#2C5EAD] inline-block"></span>
+        <span class="inline-flex items-center space-x-2 bg-slate-100 border border-slate-200 text-slate-600 text-[10px] font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-slate-400 inline-block"></span>
           <span>Bisa Media Insights</span>
         </span>
         <h1 class="font-outfit font-black text-4xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-tight mb-4">
@@ -526,7 +526,6 @@
             <div>
               <div class="aspect-video bg-slate-100 overflow-hidden relative">
                 <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
-                <span class="absolute top-3 left-3 bg-[#2C5EAD] text-white text-[9px] font-black px-2.5 py-1 rounded shadow-sm tracking-wider uppercase">${item.category}</span>
               </div>
               <div class="p-5">
                 <span class="text-[10px] text-slate-400 font-semibold block mb-2">${item.date}</span>
@@ -539,9 +538,8 @@
               </div>
             </div>
             <div class="p-5 pt-0">
-              <a href="article.html?id=${item.id}&from=catalog" class="text-[#2C5EAD] hover:text-[#1591DC] font-extrabold text-xs inline-flex items-center hover:underline transition-colors group/link">
+              <a href="article.html?id=${item.id}&from=catalog" class="text-[#2C5EAD] hover:text-[#1591DC] font-extrabold text-xs hover:underline transition-colors">
                 Read More
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1 group-hover/link:translate-x-0.5 transition-transform"></i>
               </a>
             </div>
           `;
