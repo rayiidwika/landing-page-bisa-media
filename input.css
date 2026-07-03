@@ -159,18 +159,40 @@ body {
 
   /* --- Hero Content --- */
   .blue-grid-bg {
-    padding-top: 2rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 0.5rem !important;
     min-height: calc(100vh - 80px) !important;
+    justify-content: center !important;
+  }
+  .blue-grid-bg .inline-flex.items-center.space-x-2 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
   }
   .blue-grid-bg h1 {
-    font-size: 1.6rem !important;
-    margin-bottom: 0.75rem !important;
-    line-height: 1.2 !important;
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.3 !important;
   }
   .blue-grid-bg .mb-4,
   .blue-grid-bg .mb-8 {
-    margin-bottom: 0.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .blue-grid-bg h1 div:first-child {
+    font-size: 2.4rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .blue-grid-bg h1 div:last-child {
+    font-size: 1rem !important;
+  }
+  .blue-grid-bg .block.md\:hidden {
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+    max-width: 85% !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .blue-grid-bg .flex.flex-col.sm\:flex-row {
+    margin-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
 
   /* --- Statistik (Force 4-column compact) --- */
@@ -385,6 +407,29 @@ body {
   }
   #articles-grid article .aspect-video {
     aspect-ratio: 16/9 !important;
+  }
+
+  /* --- Creators Page Grid (2 columns on mobile) --- */
+  #creators-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+  #creators-grid > div .p-5 {
+    padding: 0.5rem !important;
+  }
+  #creators-grid > div h3 {
+    font-size: 0.65rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+  #creators-grid > div p {
+    font-size: 0.55rem !important;
+  }
+  #creators-grid > div .px-5 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  #creators-grid > div .pb-5 {
+    padding-bottom: 0.5rem !important;
   }
 
   /* --- Strategic Brand Building --- */

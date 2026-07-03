@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Creators - PT. BISA MEDIA GRUP</title>
+    <meta
+      name="description"
+      content="Kenali para kreator terbaik dari PT. BISA MEDIA GRUP di berbagai kategori."
+    />
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Production Tailwind CSS & Custom Styles -->
+    <link href="assets/style.css" rel="stylesheet" />
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-white overflow-x-hidden antialiased flex flex-col min-h-screen">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img
+            src="assets/ICON-BISAMEDIA.png"
+            alt="Logo PT. BISA MEDIA GRUP"
+            class="h-12 w-auto object-contain rounded-lg mr-2"
+          />
+          <div class="flex flex-col">
+            <span class="font-outfit font-black text-sm tracking-tight text-[#2C5EAD] leading-none"
+              >PT. BISA MEDIA GRUP</span
+            >
+            <span class="text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+              >Grow Together</span
+            >
+          </div>
+        </a>
+
+        <!-- Nav Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-[14px] font-bold text-slate-600">
+          <a href="index.html" class="hover:text-[#1591DC] transition-colors">Home</a>
+          <a href="index.html#tentang" class="hover:text-[#1591DC] transition-colors">About Us</a>
+          <a href="index.html#layanan" class="hover:text-[#1591DC] transition-colors">Home for Creators</a>
+
+          <!-- Support & Experience Dropdown -->
+          <div class="relative group" id="support-dropdown-wrap">
+            <button
+              class="flex items-center gap-1 hover:text-[#1591DC] transition-colors focus:outline-none"
+              id="support-nav-btn"
+            >
+              Support &amp; Experience
+              <svg
+                class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"
+                fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown Panel -->
+            <div
+              class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-56 bg-white rounded-xl shadow-[0_10px_25px_rgba(0,0,0,0.08)] border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 overflow-hidden"
+            >
+              <div class="p-1 space-y-0.5">
+                <!-- TAP -->
+                <a
+                  href="index.html?tab=tap#tiktok-programs"
+                  class="block px-4 py-2.5 hover:bg-[#1591DC]/5 rounded-lg transition-all duration-200 group/item"
+                >
+                  <p class="text-[13px] font-bold text-slate-800 group-hover/item:text-[#1591DC] transition-colors tracking-wide">TAP</p>
+                  <p class="text-[10px] text-slate-400 group-hover/item:text-slate-500 transition-colors mt-0.5 font-normal tracking-wide">TikTok Affiliate Program</p>
+                </a>
+
+                <div class="mx-3 border-t border-slate-100"></div>
+
+                <!-- TSP -->
+                <a
+                  href="index.html?tab=tsp#tiktok-programs"
+                  class="block px-4 py-2.5 hover:bg-[#1591DC]/5 rounded-lg transition-all duration-200 group/item"
+                >
+                  <p class="text-[13px] font-bold text-slate-800 group-hover/item:text-[#1591DC] transition-colors tracking-wide">TSP</p>
+                  <p class="text-[10px] text-slate-400 group-hover/item:text-slate-500 transition-colors mt-0.5 font-normal tracking-wide">TikTok Shop Partner</p>
+                </a>
+
+                <div class="mx-3 border-t border-slate-100"></div>
+
+                <!-- Our Project -->
+                <a
+                  href="index.html?tab=project#tiktok-programs"
+                  class="block px-4 py-2.5 hover:bg-[#1591DC]/5 rounded-lg transition-all duration-200 group/item"
+                >
+                  <p class="text-[13px] font-bold text-slate-800 group-hover/item:text-[#1591DC] transition-colors tracking-wide">Our Project</p>
+                  <p class="text-[10px] text-slate-400 group-hover/item:text-slate-500 transition-colors mt-0.5 font-normal tracking-wide">Bisa Media Special Projects</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="articles.html" class="hover:text-[#1591DC] transition-colors">Articles</a>
+          <a href="creators.html" class="text-[#1591DC] transition-colors">Creators</a>
+        </nav>
+
+        <!-- CTA button -->
+        <div class="hidden md:block">
+          <a
+            href="https://wa.me/+6285940671241"
+            target="_blank"
+            class="inline-block px-6 py-2.5 bg-[#2C5EAD] text-white text-[13px] font-bold rounded-xl border-2 border-black shadow-[3.5px_3.5px_0px_0px_#000000] hover:translate-x-[1.5px] hover:translate-y-[1.5px] hover:shadow-[2px_2px_0px_0px_#000000] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150"
+          >
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          id="menu-btn"
+          class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-50 focus:outline-none"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3">
+        <a
+          href="index.html"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >Home</a
+        >
+        <a
+          href="index.html#tentang"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >About Us</a
+        >
+        <a
+          href="index.html#layanan"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >Home for Creators</a
+        >
+        <!-- Mobile: Support & Experience Accordion -->
+        <div class="border-t border-slate-100 pt-1">
+          <button
+            id="mobile-support-btn"
+            onclick="document.getElementById('mobile-support-submenu').classList.toggle('hidden')"
+            class="w-full flex items-center justify-between px-3 py-2 text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >
+            <span>Support &amp; Experience</span>
+            <svg id="mobile-support-chevron" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="mobile-support-submenu" class="hidden bg-slate-50 border-t border-slate-100 divide-y divide-slate-100">
+            <a
+              href="index.html?tab=tap#tiktok-programs"
+              class="block px-5 py-2.5 hover:bg-[#1591DC]/5 hover:text-[#1591DC] transition-colors group"
+            >
+              <p class="font-bold text-sm text-slate-800 group-hover:text-[#1591DC]">TAP</p>
+              <p class="text-[11px] text-slate-500 font-normal">TikTok Affiliate Program</p>
+            </a>
+            <a
+              href="index.html?tab=tsp#tiktok-programs"
+              class="block px-5 py-2.5 hover:bg-[#1591DC]/5 hover:text-[#1591DC] transition-colors group"
+            >
+              <p class="font-bold text-sm text-slate-800 group-hover:text-[#1591DC]">TSP</p>
+              <p class="text-[11px] text-slate-500 font-normal">TikTok Shop Partner</p>
+            </a>
+            <a
+              href="index.html?tab=project#tiktok-programs"
+              class="block px-5 py-2.5 hover:bg-[#1591DC]/5 hover:text-[#1591DC] transition-colors group"
+            >
+              <p class="font-bold text-sm text-slate-800 group-hover:text-[#1591DC]">Our Project</p>
+              <p class="text-[11px] text-slate-500 font-normal">Bisa Media Special Projects</p>
+            </a>
+          </div>
+        </div>
+        <a
+          href="articles.html"
+          class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-[#1591DC] font-semibold text-sm"
+          >Articles</a
+        >
+        <a
+          href="creators.html"
+          class="block px-3 py-2 rounded-lg bg-[#1591DC]/10 text-[#1591DC] font-semibold text-sm"
+          >Creators</a
+        >
+
+        <a
+          href="https://wa.me/+6285940671241"
+          target="_blank"
+          class="block text-center w-full px-5 py-2.5 bg-[#2C5EAD] text-white font-bold rounded-xl border-2 border-black shadow-[3.5px_3.5px_0px_0px_#000000] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150 text-sm"
+        >
+          Contact Us
+        </a>
+      </div>
+    </header>
+
+    <!-- LIST CATALOG VIEW -->
+    <div id="creators-list-view">
+      <!-- HERO SECTION -->
+      <section class="relative bg-gradient-to-br from-slate-50 to-white border-b border-slate-100 py-16 overflow-hidden">
+        <div class="absolute top-10 right-10 w-48 h-48 bg-slate-200/30 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-10 left-10 w-48 h-48 bg-slate-100/50 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span class="inline-flex items-center space-x-2 bg-slate-100 border border-slate-200 text-slate-600 text-[10px] font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-400 inline-block"></span>
+            <span>Bisa Media Creators</span>
+          </span>
+          <h1 class="font-outfit font-black text-4xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-tight mb-4">
+            All Creators
+          </h1>
+          <p class="text-slate-500 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed font-medium">
+            Temukan dan jelajahi para kreator terbaik dari PT. BISA MEDIA GRUP di berbagai kategori.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTENT PORTAL -->
+      <main class="flex-grow py-12 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- Search & Filter Controls -->
+          <div class="mb-10 space-y-6">
+            <!-- Search box -->
+            <div class="relative max-w-xl mx-auto">
+              <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+                <i data-lucide="search" class="w-5 h-5"></i>
+              </div>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Cari kreator, username, atau kategori..."
+                class="block w-full pl-12 pr-4 py-3.5 bg-slate-50 border-2 border-slate-200 rounded-2xl text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#2C5EAD] transition-all font-medium text-sm shadow-sm"
+              />
+            </div>
+
+            <!-- Category filter scroll container -->
+            <div class="flex items-center justify-start overflow-x-auto py-2.5 px-1 gap-3 scrollbar-hide" id="category-pills">
+              <!-- Dynamically populated categories -->
+            </div>
+          </div>
+
+          <!-- Grid layout -->
+          <div id="creators-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Dynamically populated cards -->
+          </div>
+          
+          <div id="creators-count" class="text-center text-slate-400 text-xs font-semibold mt-10">
+            <!-- Dynamically Loaded Count -->
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+    <!-- DETAIL VIEW (HIDDEN BY DEFAULT) -->
+    <div id="creators-detail-view" class="hidden">
+      <main class="flex-grow py-12 md:py-16 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Back Link -->
+          <a
+            href="creators.html"
+            id="back-btn"
+            class="inline-flex items-center text-slate-500 hover:text-[#2C5EAD] text-xs font-bold mb-8 transition-colors group"
+          >
+            <i data-lucide="arrow-left" class="w-4 h-4 mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+            Back 
+          </a>
+
+          <!-- Content Grid -->
+          <div id="creator-container" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Creator Main Body (8 Columns) -->
+            <div class="lg:col-span-8 bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-sm">
+              <div class="flex items-center space-x-2.5 mb-4">
+                <span id="detail-niche" class="bg-sky-100 text-[#2C5EAD] text-[10px] font-bold px-2.5 py-1 rounded">CATEGORIES</span>
+              </div>
+              
+              <h1 id="detail-name" class="font-outfit font-black text-2xl sm:text-4xl text-slate-900 tracking-tight leading-tight mb-2">
+                <!-- Dynamically Loaded -->
+              </h1>
+              <p id="detail-username" class="text-sm text-slate-400 font-semibold mb-6">
+                <!-- Dynamically Loaded -->
+              </p>
+
+              <!-- Stats display matching brutalist style -->
+              <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="bg-white border-2 border-black p-4 rounded-2xl shadow-[3.5px_3.5px_0px_0px_#000000]">
+                  <span class="text-[10px] text-slate-400 block font-bold uppercase tracking-wider mb-1">Followers</span>
+                  <span id="detail-followers" class="text-2xl sm:text-3xl font-black text-slate-850"></span>
+                </div>
+                <div class="bg-white border-2 border-black p-4 rounded-2xl shadow-[3.5px_3.5px_0px_0px_#000000]">
+                  <span class="text-[10px] text-slate-400 block font-bold uppercase tracking-wider mb-1">Total GMV</span>
+                  <span id="detail-gmv" class="text-2xl sm:text-3xl font-black text-[#2C5EAD]"></span>
+                </div>
+              </div>
+
+              <div class="aspect-video w-full rounded-2xl overflow-hidden mb-8 border border-slate-100 shadow-inner bg-slate-100">
+                <img id="detail-img" src="" alt="" class="w-full h-full object-cover">
+              </div>
+
+              <!-- Bio / Text Content -->
+              <div class="text-slate-650 text-base leading-relaxed space-y-6 font-medium text-justify">
+                <h3 class="font-outfit font-extrabold text-slate-800 text-lg mb-2">Bio & Deskripsi</h3>
+                <p id="detail-bio" class="leading-relaxed text-slate-500 text-sm">
+                  <!-- Dynamically Loaded -->
+                </p>
+              </div>
+            </div>
+
+            <!-- Creator Sidebar (4 Columns) -->
+            <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:flex lg:flex-col">
+              <!-- Sidebar Card: Popular Creators -->
+              <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm flex flex-col min-h-0 flex-1">
+                <h3 class="font-outfit font-extrabold text-slate-800 text-lg mb-4 pb-3 border-b border-slate-100 flex-shrink-0">
+                  Kreator Lainnya
+                </h3>
+                
+                <!-- Search inside Sidebar -->
+                <div class="relative mb-4 flex-shrink-0">
+                  <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                    <i data-lucide="search" class="w-4 h-4"></i>
+                  </div>
+                  <input
+                    type="text"
+                    id="sidebar-search-input"
+                    placeholder="Cari kreator..."
+                    class="block w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#2C5EAD] transition-all font-medium text-[11px] shadow-sm"
+                  />
+                </div>
+
+                <!-- List of Other Creators -->
+                <div id="sidebar-creators" class="space-y-4 overflow-y-auto scrollbar-sidebar pr-1 flex-1">
+                  <!-- Dynamically Loaded -->
+                </div>
+              </div>
+
+              <!-- Sidebar Card: CTA Business -->
+              <div class="bg-[#2C5EAD] rounded-3xl p-6 text-white shadow-md relative overflow-hidden flex-shrink-0">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full translate-x-12 -translate-y-12"></div>
+                <h3 class="font-outfit font-extrabold text-xl mb-2 relative z-10">
+                  Kembangkan Bisnis Anda
+                </h3>
+                <p class="text-xs text-blue-100 leading-relaxed mb-6 relative z-10">
+                  Hubungi kami sekarang untuk mendapatkan konsultasi gratis mengenai strategi pemasaran, kampanye influencer, dan e-commerce.
+                </p>
+                <a
+                  href="https://wa.me/+6285940671241"
+                  target="_blank"
+                  class="block text-center w-full py-3 bg-white text-[#2C5EAD] font-bold text-xs rounded-xl shadow-md hover:bg-slate-50 transition-colors relative z-10"
+                >
+                  Konsultasi WhatsApp
+                </a>
+              </div>
+            </aside>
+
+          </div>
+
+          <!-- 404/Not Found State (hidden by default) -->
+          <div id="not-found-container" class="hidden text-center py-20 bg-white border border-slate-200 rounded-3xl p-8 max-w-xl mx-auto shadow-sm">
+            <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i data-lucide="alert-circle" class="w-8 h-8"></i>
+            </div>
+            <h2 class="font-outfit font-extrabold text-2xl text-slate-800 mb-3">Kreator Tidak Ditemukan</h2>
+            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+              Maaf, kreator yang Anda cari tidak tersedia. Silakan kembali ke halaman utama untuk melihat informasi menarik lainnya.
+            </p>
+            <a href="creators.html" class="inline-block px-6 py-3 bg-[#2C5EAD] text-white text-xs font-bold rounded-xl shadow-md hover:bg-opacity-95 transition-all">
+              Kembali ke Halaman Kreator
+            </a>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#2C5EAD] text-white/70 py-12 border-t border-slate-850">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8">
+        <!-- Col 1: Logo/Desc -->
+        <div class="space-y-4 col-span-2 md:col-span-2 order-1">
+          <a href="index.html" class="flex items-center">
+            <img src="assets/ICON-BISAMEDIA-MONOKROM1.png" alt="Logo PT. BISA MEDIA GRUP"
+              class="h-12 w-auto object-contain rounded-lg mr-2" />
+            <div class="flex flex-col">
+              <span class="font-outfit font-black text-sm tracking-tight text-white leading-none">PT. BISA MEDIA
+                GRUP</span>
+              <span class="text-[9px] text-white/50 font-bold uppercase tracking-wider">Grow Together</span>
+            </div>
+          </a>
+          <!-- alamat -->
+          <div>
+            <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">
+              Alamat:
+            </h4>
+            <p class="text-xs mb-4 leading-relaxed max-w-[260px]">
+              Perum Sirnagalih Kencana Sirnagalih, Kec. Indihiang, Kab.
+              Tasikmalaya, Jawa Barat 46151
+            </p>
+            <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-2">
+              Kontak:
+            </h4>
+            <p class="text-xs mb-1">+62 859-4067-1241</p>
+            <p class="text-xs mb-4">bisa@gmail.com</p>
+            <div class="hidden md:flex space-x-3">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/+6285940671241" target="_blank"
+                class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+                title="WhatsApp">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a href="#"
+                class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+                title="Facebook">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.19792 21.5H13.1979V13.5H16.1979L16.6979 9.5H13.1979V7.5C13.1979 6.5 13.6979 5.5 15.1979 5.5H16.6979V1.5H13.1979C9.69792 1.5 7.19792 3.5 7.19792 7.5V9.5H4.19792V13.5H7.19792V21.5H9.19792Z" />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="#"
+                class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+                title="Instagram">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
+              </a>
+              <!-- Email -->
+              <a href="mailto:bisa@gmail.com"
+                class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+                title="Email">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="col-span-1 md:col-span-1 order-2">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">
+            Navigasi
+          </h4>
+          <ul class="space-y-2 text-xs">
+            <li>
+              <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="index.html#tentang" class="hover:text-white transition-colors">About Us</a>
+            </li>
+            <li>
+              <a href="index.html#layanan" class="hover:text-white transition-colors">Home for Creators</a>
+            </li>
+            <li>
+              <a href="partnership.html?type=tap" class="hover:text-white transition-colors">TAP</a>
+            </li>
+            <li>
+              <a href="partnership.html?type=tsp" class="hover:text-white transition-colors">TSP</a>
+            </li>
+            <li>
+              <a href="articles.html" class="hover:text-white transition-colors">Articles</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Official Partner -->
+        <div class="col-span-1 md:col-span-1 order-4 md:order-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">
+            Official Partner
+          </h4>
+          <p class="text-xs leading-relaxed mb-3">BISA.AI Ekosistem & TAMPIL</p>
+          <div
+            class="inline-block px-3 py-1.5 bg-white/10 rounded-lg text-[10px] font-bold text-white uppercase tracking-wider">
+            Official Partner
+          </div>
+        </div>
+
+        <!-- Col 4: Download APK -->
+        <div
+          class="space-y-3 text-left flex flex-col items-start col-span-1 md:col-span-1 row-span-2 md:row-span-1 order-3 md:order-4">
+          <div>
+            <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-1">
+              Unduh Aplikasi
+            </h4>
+            <p class="text-white font-black text-sm tracking-tight mb-0.5">
+              Apk Si Bisa Banget
+            </p>
+            <p class="text-white/50 text-[10px] leading-relaxed">
+              Tersedia gratis untuk Android &bull; v1.0.2
+            </p>
+          </div>
+
+          <!-- Phone image -->
+          <a href="#" class="relative block group w-[120px] mt-2">
+            <img src="assets/download.png" alt="Unduh Aplikasi Si Bisa Banget"
+              class="w-full h-auto object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] transition-transform duration-500 group-hover:scale-105" />
+          </a>
+
+          <!-- Download CTA button -->
+          <a href="#"
+            class="inline-flex items-center justify-center gap-2 w-[140px] py-2.5 bg-white text-[#2C5EAD] text-[13px] font-bold rounded-xl border-2 border-gray-400 shadow-[3.5px_3.5px_0px_0px_#9ca3af] hover:translate-x-[1.5px] hover:translate-y-[1.5px] hover:shadow-[2px_2px_0px_0px_#9ca3af] active:translate-x-[3.5px] active:translate-y-[3.5px] active:shadow-none transition-all duration-150">
+            <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Unduh APK
+          </a>
+        </div>
+      </div>
+
+      <!-- Social Media Icons for Mobile -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex md:hidden justify-start space-x-4 mt-8">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+6285940671241" target="_blank"
+          class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+          title="WhatsApp">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+        </a>
+        <!-- Facebook -->
+        <a href="#"
+          class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+          title="Facebook">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.19792 21.5H13.1979V13.5H16.1979L16.6979 9.5H13.1979V7.5C13.1979 6.5 13.6979 5.5 15.1979 5.5H16.6979V1.5H13.1979C9.69792 1.5 7.19792 3.5 7.19792 7.5V9.5H4.19792V13.5H7.19792V21.5H9.19792Z" />
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#"
+          class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+          title="Instagram">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+          </svg>
+        </a>
+        <!-- Email -->
+        <a href="mailto:bisa@gmail.com"
+          class="w-8 h-8 rounded-full bg-white text-[#2C5EAD] flex items-center justify-center hover:bg-white/90 transition-colors"
+          title="Email">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 pt-6 border-t border-white/10 text-center text-[10px] tracking-wide text-white/50">
+        <p>&copy; 2026 PT. BISA MEDIA GRUP. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+      const categoryColors = {
+        "Fashion": "E94E77",
+        "Beauty": "8B5CF6",
+        "FnB": "2C5EAD",
+        "Living Home": "1591DC"
+      };
+
+      // 20 creators (5 per kategori)
+      const creatorsData = [
+        // === Living Home (5) ===
+        { id: 1,  name: "Rina Amelia",     username: "@rinaamelia",        niche: "Living Home", followers: "245K", gmv: "Rp 1,8 M", bio: "Inspirasi dekorasi rumah minimalis & tips menata ruang hunian.", image: "assets/creators/creator_1.png" },
+        { id: 2,  name: "Dian Permata",    username: "@dianpermatadesign", niche: "Living Home", followers: "156K", gmv: "Rp 1,2 M", bio: "Interior designer — tips menata rumah aesthetic budget terjangkau.", image: "assets/creators/creator_2.png" },
+        { id: 3,  name: "Citra Lestari",   username: "@citraliving",       niche: "Living Home", followers: "198K", gmv: "Rp 1,4 M", bio: "Ibu rumah tangga kreatif — ide DIY & dekorasi rumah sederhana.", image: "assets/creators/creator_3.png" },
+        { id: 4,  name: "Hendra Wijaya",   username: "@hendrahome",        niche: "Living Home", followers: "312K", gmv: "Rp 2,1 M", bio: "Home decor enthusiast dengan konsep hunian modern tropis.", image: "assets/creators/creator_4.png" },
+        { id: 5,  name: "Sari Indah",      username: "@sariinterior",      niche: "Living Home", followers: "178K", gmv: "Rp 1,0 M", bio: "Berbagi tips mendesain rumah mungil yang fungsional & estetik.", image: "assets/creators/creator_5.png" },
+        // === Beauty (5) ===
+        { id: 6,  name: "Maya Putri",      username: "@mayaputribeauty",   niche: "Beauty",      followers: "678K", gmv: "Rp 3,2 M", bio: "Beauty vlogger — update tren skincare & makeup terkini.", image: "assets/creators/creator_6.png" },
+        { id: 7,  name: "Winda Sari",      username: "@windasariskin",     niche: "Beauty",      followers: "547K", gmv: "Rp 2,8 M", bio: "Skincare specialist — rutinitas perawatan wajah terbaik.", image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop&crop=face" },
+        { id: 8,  name: "Dina Aulia",      username: "@dinaaulia",         niche: "Beauty",      followers: "423K", gmv: "Rp 2,4 M", bio: "Makeup artist — tutorial natural look untuk sehari-hari.", image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop&crop=face" },
+        { id: 9,  name: "Fitri Handayani", username: "@fitribeauty",       niche: "Beauty",      followers: "289K", gmv: "Rp 1,6 M", bio: "Review produk kecantikan lokal & internasional yang jujur.", image: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&h=400&fit=crop&crop=face" },
+        { id: 10, name: "Rani Kusuma",     username: "@raniskincare",      niche: "Beauty",      followers: "198K", gmv: "Rp 1,1 M", bio: "Sharing skincare routine untuk kulit sensitif & berjerawat.", image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop&crop=face" },
+        // === FnB (5) ===
+        { id: 11, name: "Budi Santoso",    username: "@budisantosokitchen",niche: "FnB",         followers: "512K", gmv: "Rp 2,6 M", bio: "Chef rumahan — resep Nusantara & internasional kekinian.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" },
+        { id: 12, name: "Fajar Rahman",    username: "@fajarcooking",      niche: "FnB",         followers: "734K", gmv: "Rp 3,5 M", bio: "Food content creator — masakan tradisional & street food modern.", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face" },
+        { id: 13, name: "Gilang Permadi",  username: "@gilangfoodie",      niche: "FnB",         followers: "421K", gmv: "Rp 2,2 M", bio: "Food vlogger — menjelajahi kuliner Nusantara dari Sabang-Merauke.", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face" },
+        { id: 14, name: "Dewi Lestari",    username: "@dewikuliner",       niche: "FnB",         followers: "267K", gmv: "Rp 1,5 M", bio: "Home baker — resep cake & pastry yang mudah ditiru.", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face" },
+        { id: 15, name: "Rizky Ramadhan",  username: "@rizkykuliners",     niche: "FnB",         followers: "189K", gmv: "Rp 0,9 M", bio: "Street food hunter — review kuliner pinggir jalan hits.", image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=400&fit=crop&crop=face" },
+        // === Fashion (5) ===
+        { id: 16, name: "Siska Dewi",      username: "@siskadewi",         niche: "Fashion",     followers: "389K", gmv: "Rp 2,0 M", bio: "Fashion enthusiast — gaya casual chic yang menginspirasi.", image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop&crop=face" },
+        { id: 17, name: "Nadia Ayu",       username: "@nadiaayustyle",     niche: "Fashion",     followers: "291K", gmv: "Rp 1,7 M", bio: "Slow fashion advocate — koleksi outfit sustainable kekinian.", image: "https://images.unsplash.com/photo-1488716820095-cbe80883c496?w=400&h=400&fit=crop&crop=face" },
+        { id: 18, name: "Alya Safira",     username: "@alyafashion",       niche: "Fashion",     followers: "534K", gmv: "Rp 2,9 M", bio: "Fashion blogger — tips mix & match outfit kekinian.", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face" },
+        { id: 19, name: "Bima Pratama",    username: "@bimastyle",         niche: "Fashion",     followers: "198K", gmv: "Rp 1,2 M", bio: "Men's fashion — gaya kasual pria modern untuk kerja & hangout.", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face" },
+        { id: 20, name: "Cantika Putri",   username: "@cantikabusana",     niche: "Fashion",     followers: "345K", gmv: "Rp 1,9 M", bio: "Hijab fashion — look hijab modern yang elegan & stylish.", image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=face" }
+      ];
+    </script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Parse Creator ID from URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const creatorId = parseInt(urlParams.get("id"));
+
+      const listViewContainer = document.getElementById("creators-list-view");
+      const detailViewContainer = document.getElementById("creators-detail-view");
+
+      // Dynamic variables for catalog listing
+      let activeCategory = "Semua";
+      let searchQuery = "";
+      const dynamicCategories = ["Semua", ...new Set(creatorsData.map(item => item.niche))];
+
+      const categoryContainer = document.getElementById("category-pills");
+      const gridContainer = document.getElementById("creators-grid");
+      const searchInput = document.getElementById("search-input");
+      const creatorsCount = document.getElementById("creators-count");
+
+      // Niche badge coloring logic
+      function getNicheBadgeClass(niche) {
+        switch(niche) {
+          case "Fashion":
+            return "bg-rose-50 text-rose-600 border border-rose-100/80 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider";
+          case "Beauty":
+            return "bg-purple-50 text-purple-600 border border-purple-100/80 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider";
+          case "FnB":
+            return "bg-blue-50 text-[#2C5EAD] border border-blue-100/80 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider";
+          case "Living Home":
+            return "bg-sky-50 text-sky-600 border border-sky-100/80 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider";
+          default:
+            return "bg-slate-50 text-slate-600 border border-slate-200/80 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider";
+        }
+      }
+
+      function initCatalogCategories() {
+        if (!categoryContainer) return;
+        categoryContainer.innerHTML = "";
+        dynamicCategories.forEach(cat => {
+          const btn = document.createElement("button");
+          btn.className = cat === activeCategory
+            ? "px-5 py-2.5 rounded-full text-xs font-semibold whitespace-nowrap bg-[#2C5EAD] text-white transition-colors duration-150 flex-shrink-0"
+            : "px-5 py-2.5 rounded-full text-xs font-medium whitespace-nowrap bg-slate-100 text-slate-600 hover:bg-slate-200/80 hover:text-slate-800 transition-colors duration-150 flex-shrink-0";
+          btn.textContent = cat;
+          btn.addEventListener("click", () => {
+            activeCategory = cat;
+            initCatalogCategories();
+            renderCatalogCreators();
+          });
+          categoryContainer.appendChild(btn);
+        });
+      }
+
+      function renderCatalogCreators() {
+        if (!gridContainer) return;
+        gridContainer.innerHTML = "";
+
+        const filtered = creatorsData.filter(item => {
+          const matchesCategory = activeCategory === "Semua" || item.niche === activeCategory;
+          const q = searchQuery.toLowerCase();
+          const matchesSearch = item.name.toLowerCase().includes(q) ||
+                                item.username.toLowerCase().includes(q) ||
+                                item.niche.toLowerCase().includes(q) ||
+                                item.bio.toLowerCase().includes(q);
+          return matchesCategory && matchesSearch;
+        });
+
+        if (creatorsCount) {
+          creatorsCount.textContent = `Menampilkan ${filtered.length} dari ${creatorsData.length} kreator`;
+        }
+
+        if (filtered.length === 0) {
+          gridContainer.innerHTML = `
+            <div class="col-span-full text-center py-16 bg-slate-50 border border-slate-200 rounded-3xl p-8 max-w-md mx-auto shadow-sm">
+              <div class="w-14 h-14 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-5">
+                <i data-lucide="info" class="w-7 h-7"></i>
+              </div>
+              <h3 class="font-outfit font-extrabold text-lg text-slate-800 mb-2">Kreator Tidak Ditemukan</h3>
+              <p class="text-slate-500 text-xs leading-relaxed">
+                Tidak ada kreator yang cocok dengan pencarian atau filter Anda. Coba kata kunci lain.
+              </p>
+            </div>
+          `;
+          lucide.createIcons();
+          return;
+        }
+
+        filtered.forEach(item => {
+          const card = document.createElement("div");
+          card.className = "bg-white rounded-2xl overflow-hidden border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#2C5EAD]/20 transition-all duration-300 group";
+          card.innerHTML = `
+            <div>
+              <div class="aspect-square bg-slate-100 overflow-hidden relative">
+                <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+                <span class="absolute top-3 left-3 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-[10px] font-bold text-[#2C5EAD] border border-slate-200 shadow-sm">
+                  ${item.niche}
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-outfit font-extrabold text-base text-slate-900 tracking-tight mb-1 group-hover:text-[#2C5EAD] transition-colors">
+                  <a href="creators.html?id=${item.id}">${item.name}</a>
+                </h3>
+                <p class="text-[12px] text-slate-400 font-semibold mb-3">${item.username}</p>
+                <p class="text-slate-500 text-xs leading-relaxed line-clamp-2">${item.bio}</p>
+              </div>
+            </div>
+            
+            <div class="px-5 pb-5">
+              <div class="flex items-center justify-between pt-4 border-t border-slate-100 mb-4">
+                <div>
+                  <span class="text-sm font-extrabold text-slate-800">${item.followers}</span>
+                  <span class="text-[9px] text-slate-400 block font-medium">Followers</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-sm font-extrabold text-[#2C5EAD]">${item.gmv}</span>
+                  <span class="text-[9px] text-slate-400 block font-medium">Total GMV</span>
+                </div>
+              </div>
+              <a href="creators.html?id=${item.id}" class="text-[#2C5EAD] hover:text-[#1591DC] font-extrabold text-xs hover:underline transition-colors inline-flex items-center gap-1">
+                Detail Kreator
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          `;
+          gridContainer.appendChild(card);
+        });
+        lucide.createIcons();
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener("keyup", (e) => {
+          searchQuery = e.target.value;
+          renderCatalogCreators();
+        });
+      }
+
+      // DETAIL VIEW LOGIC
+      const activeCreator = creatorsData.find(c => c.id === creatorId);
+      const creatorContainer = document.getElementById("creator-container");
+      const notFoundContainer = document.getElementById("not-found-container");
+      const sidebarContainer = document.getElementById("sidebar-creators");
+      const sidebarSearchInput = document.getElementById("sidebar-search-input");
+      let sidebarSearchQuery = "";
+
+      function loadCreatorDetails() {
+        if (!activeCreator) {
+          if (creatorContainer) creatorContainer.classList.add("hidden");
+          if (notFoundContainer) notFoundContainer.classList.remove("hidden");
+          document.title = "Kreator Tidak Ditemukan - PT. BISA MEDIA GRUP";
+          return;
+        }
+
+        // Set page title
+        document.title = `${activeCreator.name} - Bisa Media Creator`;
+
+        // Populate elements
+        const detailNiche = document.getElementById("detail-niche");
+        const detailName = document.getElementById("detail-name");
+        const detailUsername = document.getElementById("detail-username");
+        const detailFollowers = document.getElementById("detail-followers");
+        const detailGmv = document.getElementById("detail-gmv");
+        const detailImg = document.getElementById("detail-img");
+        const detailBio = document.getElementById("detail-bio");
+
+        if (detailNiche) {
+          detailNiche.textContent = activeCreator.niche;
+          detailNiche.className = getNicheBadgeClass(activeCreator.niche);
+        }
+        if (detailName) detailName.textContent = activeCreator.name;
+        if (detailUsername) detailUsername.textContent = activeCreator.username;
+        if (detailFollowers) detailFollowers.textContent = activeCreator.followers;
+        if (detailGmv) detailGmv.textContent = activeCreator.gmv;
+        if (detailImg) {
+          detailImg.src = activeCreator.image;
+          detailImg.alt = activeCreator.name;
+        }
+        if (detailBio) detailBio.textContent = activeCreator.bio;
+      }
+
+      function renderSidebarCreators() {
+        if (!sidebarContainer) return;
+        sidebarContainer.innerHTML = "";
+
+        // Filter creators based on search query
+        const filtered = creatorsData.filter(c => {
+          if (sidebarSearchQuery) {
+            const q = sidebarSearchQuery.toLowerCase();
+            return c.name.toLowerCase().includes(q) ||
+                   c.username.toLowerCase().includes(q) ||
+                   c.niche.toLowerCase().includes(q);
+          }
+          return c.id !== creatorId;
+        });
+
+        if (filtered.length === 0) {
+          sidebarContainer.innerHTML = `
+            <p class="text-xs text-slate-450 text-center py-6 font-medium">Kreator tidak ditemukan</p>
+          `;
+          return;
+        }
+
+        filtered.forEach(item => {
+          const itemEl = document.createElement("a");
+          itemEl.href = `creators.html?id=${item.id}`;
+          const isActive = item.id === creatorId;
+          
+          itemEl.className = `flex items-center gap-3.5 p-2.5 rounded-2xl transition-all border ${
+            isActive 
+              ? "bg-[#2C5EAD]/5 border-[#2C5EAD]/20 font-bold" 
+              : "border-transparent hover:bg-slate-50 hover:border-slate-100"
+          } group`;
+
+          itemEl.innerHTML = `
+            <div class="w-10 h-10 rounded-xl overflow-hidden flex-shrink-0 border border-slate-100 shadow-sm bg-slate-50">
+              <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h4 class="font-bold text-xs text-slate-800 truncate group-hover:text-[#2C5EAD] transition-colors">${item.name}</h4>
+              <div class="flex items-center gap-1.5 mt-1">
+                <span class="text-[9px] text-slate-450 font-bold opacity-75">${item.niche}</span>
+                <span class="text-[9px] text-slate-300">•</span>
+                <span class="text-[9px] font-black text-[#2C5EAD]">${item.followers}</span>
+              </div>
+            </div>
+          `;
+          sidebarContainer.appendChild(itemEl);
+        });
+      }
+
+      if (sidebarSearchInput) {
+        sidebarSearchInput.addEventListener("keyup", (e) => {
+          sidebarSearchQuery = e.target.value;
+          renderSidebarCreators();
+        });
+      }
+
+      // Toggle views depending on parameter presence
+      if (isNaN(creatorId)) {
+        // No ID: Show catalog list, hide details
+        if (listViewContainer) listViewContainer.classList.remove("hidden");
+        if (detailViewContainer) detailViewContainer.classList.add("hidden");
+        
+        initCatalogCategories();
+        renderCatalogCreators();
+      } else {
+        // Has ID: Show details, hide catalog list
+        if (listViewContainer) listViewContainer.classList.add("hidden");
+        if (detailViewContainer) detailViewContainer.classList.remove("hidden");
+
+        loadCreatorDetails();
+        renderSidebarCreators();
+      }
+    </script>
+  </body>
+</html>
