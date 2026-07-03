@@ -380,6 +380,21 @@
       </main>
     </div>
 
+    <!-- MODAL -->
+    <div id="creator-modal" class="fixed inset-0 z-50 hidden">
+      <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal()"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+          <button onclick="closeModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/90 border border-slate-200 flex items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-50 z-10 shadow-sm transition-all">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+          <div id="modal-content" class="p-0">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="bg-[#2C5EAD] text-white/70 py-12 border-t border-slate-850">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8">
@@ -586,34 +601,85 @@
       // 20 creators (5 per kategori)
       const creatorsData = [
         // === Living Home (5) ===
-        { id: 1,  name: "Rina Amelia",     username: "@rinaamelia",        niche: "Living Home", followers: "245K", gmv: "Rp 1,8 M", bio: "Inspirasi dekorasi rumah minimalis & tips menata ruang hunian.", image: "assets/creators/creator_1.png" },
-        { id: 2,  name: "Dian Permata",    username: "@dianpermatadesign", niche: "Living Home", followers: "156K", gmv: "Rp 1,2 M", bio: "Interior designer — tips menata rumah aesthetic budget terjangkau.", image: "assets/creators/creator_2.png" },
-        { id: 3,  name: "Citra Lestari",   username: "@citraliving",       niche: "Living Home", followers: "198K", gmv: "Rp 1,4 M", bio: "Ibu rumah tangga kreatif — ide DIY & dekorasi rumah sederhana.", image: "assets/creators/creator_3.png" },
-        { id: 4,  name: "Hendra Wijaya",   username: "@hendrahome",        niche: "Living Home", followers: "312K", gmv: "Rp 2,1 M", bio: "Home decor enthusiast dengan konsep hunian modern tropis.", image: "assets/creators/creator_4.png" },
-        { id: 5,  name: "Sari Indah",      username: "@sariinterior",      niche: "Living Home", followers: "178K", gmv: "Rp 1,0 M", bio: "Berbagi tips mendesain rumah mungil yang fungsional & estetik.", image: "assets/creators/creator_5.png" },
+        { id: 1,  name: "Rina Amelia",     username: "@rinaamelia",        niche: "Living Home", age: 28, gmv: "Rp 1,8 M", bio: "Inspirasi dekorasi rumah minimalis & tips menata ruang hunian.", image: "assets/creators/creator_1.png" },
+        { id: 2,  name: "Dian Permata",    username: "@dianpermatadesign", niche: "Living Home", age: 32, gmv: "Rp 1,2 M", bio: "Interior designer — tips menata rumah aesthetic budget terjangkau.", image: "assets/creators/creator_2.png" },
+        { id: 3,  name: "Citra Lestari",   username: "@citraliving",       niche: "Living Home", age: 35, gmv: "Rp 1,4 M", bio: "Ibu rumah tangga kreatif — ide DIY & dekorasi rumah sederhana.", image: "assets/creators/creator_3.png" },
+        { id: 4,  name: "Hendra Wijaya",   username: "@hendrahome",        niche: "Living Home", age: 30, gmv: "Rp 2,1 M", bio: "Home decor enthusiast dengan konsep hunian modern tropis.", image: "assets/creators/creator_4.png" },
+        { id: 5,  name: "Sari Indah",      username: "@sariinterior",      niche: "Living Home", age: 26, gmv: "Rp 1,0 M", bio: "Berbagi tips mendesain rumah mungil yang fungsional & estetik.", image: "assets/creators/creator_5.png" },
         // === Beauty (5) ===
-        { id: 6,  name: "Maya Putri",      username: "@mayaputribeauty",   niche: "Beauty",      followers: "678K", gmv: "Rp 3,2 M", bio: "Beauty vlogger — update tren skincare & makeup terkini.", image: "assets/creators/creator_6.png" },
-        { id: 7,  name: "Winda Sari",      username: "@windasariskin",     niche: "Beauty",      followers: "547K", gmv: "Rp 2,8 M", bio: "Skincare specialist — rutinitas perawatan wajah terbaik.", image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop&crop=face" },
-        { id: 8,  name: "Dina Aulia",      username: "@dinaaulia",         niche: "Beauty",      followers: "423K", gmv: "Rp 2,4 M", bio: "Makeup artist — tutorial natural look untuk sehari-hari.", image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop&crop=face" },
-        { id: 9,  name: "Fitri Handayani", username: "@fitribeauty",       niche: "Beauty",      followers: "289K", gmv: "Rp 1,6 M", bio: "Review produk kecantikan lokal & internasional yang jujur.", image: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&h=400&fit=crop&crop=face" },
-        { id: 10, name: "Rani Kusuma",     username: "@raniskincare",      niche: "Beauty",      followers: "198K", gmv: "Rp 1,1 M", bio: "Sharing skincare routine untuk kulit sensitif & berjerawat.", image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop&crop=face" },
+        { id: 6,  name: "Maya Putri",      username: "@mayaputribeauty",   niche: "Beauty",      age: 24, gmv: "Rp 3,2 M", bio: "Beauty vlogger — update tren skincare & makeup terkini.", image: "assets/creators/creator_6.png" },
+        { id: 7,  name: "Winda Sari",      username: "@windasariskin",     niche: "Beauty",      age: 27, gmv: "Rp 2,8 M", bio: "Skincare specialist — rutinitas perawatan wajah terbaik.", image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop&crop=face" },
+        { id: 8,  name: "Dina Aulia",      username: "@dinaaulia",         niche: "Beauty",      age: 22, gmv: "Rp 2,4 M", bio: "Makeup artist — tutorial natural look untuk sehari-hari.", image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop&crop=face" },
+        { id: 9,  name: "Fitri Handayani", username: "@fitribeauty",       niche: "Beauty",      age: 29, gmv: "Rp 1,6 M", bio: "Review produk kecantikan lokal & internasional yang jujur.", image: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&h=400&fit=crop&crop=face" },
+        { id: 10, name: "Rani Kusuma",     username: "@raniskincare",      niche: "Beauty",      age: 25, gmv: "Rp 1,1 M", bio: "Sharing skincare routine untuk kulit sensitif & berjerawat.", image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop&crop=face" },
         // === FnB (5) ===
-        { id: 11, name: "Budi Santoso",    username: "@budisantosokitchen",niche: "FnB",         followers: "512K", gmv: "Rp 2,6 M", bio: "Chef rumahan — resep Nusantara & internasional kekinian.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" },
-        { id: 12, name: "Fajar Rahman",    username: "@fajarcooking",      niche: "FnB",         followers: "734K", gmv: "Rp 3,5 M", bio: "Food content creator — masakan tradisional & street food modern.", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face" },
-        { id: 13, name: "Gilang Permadi",  username: "@gilangfoodie",      niche: "FnB",         followers: "421K", gmv: "Rp 2,2 M", bio: "Food vlogger — menjelajahi kuliner Nusantara dari Sabang-Merauke.", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face" },
-        { id: 14, name: "Dewi Lestari",    username: "@dewikuliner",       niche: "FnB",         followers: "267K", gmv: "Rp 1,5 M", bio: "Home baker — resep cake & pastry yang mudah ditiru.", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face" },
-        { id: 15, name: "Rizky Ramadhan",  username: "@rizkykuliners",     niche: "FnB",         followers: "189K", gmv: "Rp 0,9 M", bio: "Street food hunter — review kuliner pinggir jalan hits.", image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=400&fit=crop&crop=face" },
+        { id: 11, name: "Budi Santoso",    username: "@budisantosokitchen",niche: "FnB",         age: 34, gmv: "Rp 2,6 M", bio: "Chef rumahan — resep Nusantara & internasional kekinian.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" },
+        { id: 12, name: "Fajar Rahman",    username: "@fajarcooking",      niche: "FnB",         age: 31, gmv: "Rp 3,5 M", bio: "Food content creator — masakan tradisional & street food modern.", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face" },
+        { id: 13, name: "Gilang Permadi",  username: "@gilangfoodie",      niche: "FnB",         age: 28, gmv: "Rp 2,2 M", bio: "Food vlogger — menjelajahi kuliner Nusantara dari Sabang-Merauke.", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face" },
+        { id: 14, name: "Dewi Lestari",    username: "@dewikuliner",       niche: "FnB",         age: 33, gmv: "Rp 1,5 M", bio: "Home baker — resep cake & pastry yang mudah ditiru.", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face" },
+        { id: 15, name: "Rizky Ramadhan",  username: "@rizkykuliners",     niche: "FnB",         age: 23, gmv: "Rp 0,9 M", bio: "Street food hunter — review kuliner pinggir jalan hits.", image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=400&fit=crop&crop=face" },
         // === Fashion (5) ===
-        { id: 16, name: "Siska Dewi",      username: "@siskadewi",         niche: "Fashion",     followers: "389K", gmv: "Rp 2,0 M", bio: "Fashion enthusiast — gaya casual chic yang menginspirasi.", image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop&crop=face" },
-        { id: 17, name: "Nadia Ayu",       username: "@nadiaayustyle",     niche: "Fashion",     followers: "291K", gmv: "Rp 1,7 M", bio: "Slow fashion advocate — koleksi outfit sustainable kekinian.", image: "https://images.unsplash.com/photo-1488716820095-cbe80883c496?w=400&h=400&fit=crop&crop=face" },
-        { id: 18, name: "Alya Safira",     username: "@alyafashion",       niche: "Fashion",     followers: "534K", gmv: "Rp 2,9 M", bio: "Fashion blogger — tips mix & match outfit kekinian.", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face" },
-        { id: 19, name: "Bima Pratama",    username: "@bimastyle",         niche: "Fashion",     followers: "198K", gmv: "Rp 1,2 M", bio: "Men's fashion — gaya kasual pria modern untuk kerja & hangout.", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face" },
-        { id: 20, name: "Cantika Putri",   username: "@cantikabusana",     niche: "Fashion",     followers: "345K", gmv: "Rp 1,9 M", bio: "Hijab fashion — look hijab modern yang elegan & stylish.", image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=face" }
+        { id: 16, name: "Siska Dewi",      username: "@siskadewi",         niche: "Fashion",     age: 26, gmv: "Rp 2,0 M", bio: "Fashion enthusiast — gaya casual chic yang menginspirasi.", image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop&crop=face" },
+        { id: 17, name: "Nadia Ayu",       username: "@nadiaayustyle",     niche: "Fashion",     age: 24, gmv: "Rp 1,7 M", bio: "Slow fashion advocate — koleksi outfit sustainable kekinian.", image: "https://images.unsplash.com/photo-1488716820095-cbe80883c496?w=400&h=400&fit=crop&crop=face" },
+        { id: 18, name: "Alya Safira",     username: "@alyafashion",       niche: "Fashion",     age: 22, gmv: "Rp 2,9 M", bio: "Fashion blogger — tips mix & match outfit kekinian.", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face" },
+        { id: 19, name: "Bima Pratama",    username: "@bimastyle",         niche: "Fashion",     age: 27, gmv: "Rp 1,2 M", bio: "Men's fashion — gaya kasual pria modern untuk kerja & hangout.", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face" },
+        { id: 20, name: "Cantika Putri",   username: "@cantikabusana",     niche: "Fashion",     age: 23, gmv: "Rp 1,9 M", bio: "Hijab fashion — look hijab modern yang elegan & stylish.", image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=face" }
       ];
     </script>
     <script>
       // Initialize Lucide icons
       lucide.createIcons();
+
+      // Modal functions
+      function openModal(id) {
+        const creator = creatorsData.find(c => c.id === id);
+        if (!creator) return;
+        const modal = document.getElementById("creator-modal");
+        const container = document.getElementById("modal-content");
+        const nicheColors = { "Fashion": "from-rose-50 to-rose-100/20", "Beauty": "from-purple-50 to-purple-100/20", "FnB": "from-blue-50 to-blue-100/20", "Living Home": "from-sky-50 to-sky-100/20" };
+        const bg = nicheColors[creator.niche] || "from-slate-50 to-white";
+        container.innerHTML = `
+          <div class="bg-gradient-to-br ${bg} rounded-t-3xl">
+            <div class="aspect-square overflow-hidden">
+              <img src="${creator.image}" alt="${creator.name}" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="px-3 py-0.5 bg-blue-50 border border-blue-100 rounded-full text-[10px] font-bold text-[#2C5EAD]">${creator.niche}</span>
+            </div>
+            <h2 class="font-outfit font-extrabold text-2xl text-slate-900 mb-0.5">${creator.name}</h2>
+            <p class="text-slate-400 text-sm mb-5">${creator.username}</p>
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <div class="bg-slate-50 rounded-xl p-3.5">
+                <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider mb-0.5">Umur</span>
+                <span class="text-lg font-extrabold text-slate-800">${creator.age} Tahun</span>
+              </div>
+              <div class="bg-slate-50 rounded-xl p-3.5">
+                <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider mb-0.5">Total GMV</span>
+                <span class="text-lg font-extrabold text-[#2C5EAD]">${creator.gmv}</span>
+              </div>
+            </div>
+            <div class="border-t border-slate-100 pt-4">
+              <h4 class="font-outfit font-extrabold text-sm text-slate-800 mb-2">Bio</h4>
+              <p class="text-slate-500 text-sm leading-relaxed">${creator.bio}</p>
+            </div>
+          </div>
+        `;
+        modal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+        lucide.createIcons();
+      }
+
+      function closeModal() {
+        document.getElementById("creator-modal").classList.add("hidden");
+        document.body.style.overflow = "";
+      }
+
+      // Escape key to close modal
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
 
       // Mobile Menu Toggle
       const menuBtn = document.getElementById("menu-btn");
@@ -709,40 +775,32 @@
         }
 
         filtered.forEach(item => {
+          const catBg = {
+            "Fashion": "from-rose-50 via-rose-100/20 to-white",
+            "Beauty": "from-purple-50 via-purple-100/20 to-white",
+            "FnB": "from-blue-50 via-blue-100/20 to-white",
+            "Living Home": "from-sky-50 via-sky-100/20 to-white"
+          };
+          const bgGrad = catBg[item.niche] || "from-slate-50 to-white";
           const card = document.createElement("div");
-          card.className = "bg-white rounded-2xl overflow-hidden border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#2C5EAD]/20 transition-all duration-300 group";
+          card.className = "bg-white rounded-2xl overflow-hidden border border-slate-200 flex flex-col shadow-sm hover:shadow-lg hover:border-[#2C5EAD]/20 transition-all duration-300 group cursor-pointer";
+          card.onclick = () => openModal(item.id);
           card.innerHTML = `
-            <div>
-              <div class="aspect-square bg-slate-100 overflow-hidden relative">
+            <div class="relative bg-gradient-to-br ${bgGrad}">
+              <div class="aspect-[4/3] overflow-hidden">
                 <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
-                <span class="absolute top-3 left-3 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-[10px] font-bold text-[#2C5EAD] border border-slate-200 shadow-sm">
-                  ${item.niche}
-                </span>
               </div>
-              <div class="p-5">
-                <h3 class="font-outfit font-extrabold text-base text-slate-900 tracking-tight mb-1 group-hover:text-[#2C5EAD] transition-colors">
-                  <a href="creators.html?id=${item.id}">${item.name}</a>
-                </h3>
-                <p class="text-[12px] text-slate-400 font-semibold mb-3">${item.username}</p>
-                <p class="text-slate-500 text-xs leading-relaxed line-clamp-2">${item.bio}</p>
-              </div>
+              <span class="absolute top-3 left-3 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-[10px] font-bold text-[#2C5EAD] border border-slate-200 shadow-sm">
+                ${item.niche}
+              </span>
             </div>
-            
-            <div class="px-5 pb-5">
-              <div class="flex items-center justify-between pt-4 border-t border-slate-100 mb-4">
-                <div>
-                  <span class="text-sm font-extrabold text-slate-800">${item.followers}</span>
-                  <span class="text-[9px] text-slate-400 block font-medium">Followers</span>
-                </div>
-                <div class="text-right">
-                  <span class="text-sm font-extrabold text-[#2C5EAD]">${item.gmv}</span>
-                  <span class="text-[9px] text-slate-400 block font-medium">Total GMV</span>
-                </div>
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="font-outfit font-extrabold text-base text-slate-900 tracking-tight group-hover:text-[#2C5EAD] transition-colors">${item.name}</h3>
+              <p class="text-[12px] text-slate-400 font-semibold mt-0.5 mb-3">${item.username}</p>
+              <div class="mt-auto pt-3 border-t border-slate-100">
+                <span class="text-sm font-extrabold text-[#2C5EAD]">${item.gmv}</span>
+                <span class="text-[9px] text-slate-400 block font-medium">Total GMV</span>
               </div>
-              <a href="creators.html?id=${item.id}" class="text-[#2C5EAD] hover:text-[#1591DC] font-extrabold text-xs hover:underline transition-colors inline-flex items-center gap-1">
-                Detail Kreator
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </a>
             </div>
           `;
           gridContainer.appendChild(card);
