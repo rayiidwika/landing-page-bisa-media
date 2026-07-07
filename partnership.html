@@ -24,13 +24,16 @@
   </head>
 
   <body class="bg-white overflow-x-hidden antialiased flex flex-col min-h-screen">
-    <!-- NAVBAR -->
+
+    <!-- ================================================================ -->
+    <!-- NAVBAR                                                          -->
+    <!-- ================================================================ -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <!-- Logo -->
         <a href="index.html" class="flex items-center">
           <img
-            src="assets/ICON-BISAMEDIA.png"
+            src="assets/logo/bisamedia.png"
             alt="Logo PT. BISA MEDIA GRUP"
             class="h-12 w-auto object-contain rounded-lg mr-2"
           />
@@ -222,10 +225,9 @@
             <h1 id="partner-title" class="font-outfit font-black text-2xl sm:text-4xl text-slate-900 tracking-tight leading-tight mb-6"></h1>
 
             <!-- Dynamic Banner Image -->
-            <div class="aspect-video w-full rounded-2xl overflow-hidden mb-8 border border-slate-100 shadow-inner bg-slate-900 flex items-center justify-center relative">
+            <div id="partner-hero" class="aspect-video w-full rounded-2xl overflow-hidden mb-8 border border-slate-100 shadow-inner bg-slate-900 flex items-center justify-center relative">
               <img id="hero-image" src="" alt="Partner Illustration" class="w-full h-full object-cover absolute inset-0" />
-              <div class="p-8 text-center text-white space-y-4 relative z-10 bg-slate-900/60 w-full h-full flex flex-col items-center justify-center">
-                <div id="hero-icon-container" class="w-20 h-20 mx-auto rounded-full flex items-center justify-center text-white mb-2 shadow-lg"></div>
+              <div class="p-8 text-center text-white space-y-3 relative z-10 bg-slate-900/60 w-full h-full flex flex-col items-center justify-center">
                 <h3 id="hero-title" class="font-outfit font-black text-3xl tracking-tight"></h3>
                 <p id="hero-subtitle" class="text-sm text-blue-100 max-w-md mx-auto"></p>
               </div>
@@ -292,7 +294,7 @@
         <!-- Col 1: Logo/Desc -->
         <div class="space-y-4 col-span-2 md:col-span-2 order-1">
           <a href="index.html" class="flex items-center">
-            <img src="assets/ICON-BISAMEDIA-MONOKROM1.png" alt="Logo PT. BISA MEDIA GRUP"
+            <img src="assets/logo/bisamedia-monokrom1.png" alt="Logo PT. BISA MEDIA GRUP"
               class="h-12 w-auto object-contain rounded-lg mr-2" />
             <div class="flex flex-col">
               <span class="font-outfit font-black text-sm tracking-tight text-white leading-none">PT. BISA MEDIA
@@ -415,7 +417,7 @@
 
           <!-- Phone image -->
           <a href="#" class="relative block group w-[120px] mt-2">
-            <img src="assets/download.png" alt="Unduh Aplikasi Si Bisa Banget"
+            <img src="assets/logo/download.png" alt="Unduh Aplikasi Si Bisa Banget"
               class="w-full h-auto object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] transition-transform duration-500 group-hover:scale-105" />
           </a>
 
@@ -495,16 +497,14 @@
 
       const partnershipsData = {
         tap: {
-          image: "assets/influencer_kol_studio.png",
+          image: "assets/images/tap-illustration.png",
           badge: "PARTNER PROGRAM",
           badgeColor: "bg-blue-100 text-[#2C5EAD]",
-          subBadge: "Official TikTok Agency Partner",
-          title: "TikTok Agency Partner (TAP)",
-          heroTitle: "TIKTOK AGENCY PARTNER",
+          subBadge: "Official TikTok Affiliate Partner",
+          title: "TikTok Affiliate Partner (TAP)",
+          heroTitle: "TIKTOK AFFILIATE PARTNER",
           heroSubtitle: "Tumbuh lebih cepat dengan ekosistem kreator & affiliate resmi dari TikTok.",
-          heroIconBg: "bg-[#2C5EAD]",
-          heroIcon: "sparkles",
-          intro: "Sebagai <strong>TikTok Agency Partner (TAP)</strong> resmi, PT. BISA MEDIA GRUP berkomitmen penuh untuk membangun jembatan emas antara brand lokal/global dengan para kreator affiliate potensial. Program TAP difokuskan untuk mengelola, melatih, serta mensinergikan talenta kreatif di media sosial agar mampu menghasilkan karya promosi yang berdampak nyata pada penjualan.",
+          intro: "Sebagai <strong>TikTok Affiliate Partner (TAP)</strong> resmi, PT. BISA MEDIA GRUP berkomitmen penuh untuk membangun jembatan emas antara brand lokal/global dengan para kreator affiliate potensial. Program TAP difokuskan untuk mengelola, melatih, serta mensinergikan talenta kreatif di media sosial agar mampu menghasilkan karya promosi yang berdampak nyata pada penjualan.",
           bulletTitle: "Mengapa Bergabung dengan Program TAP Kami?",
           bulletIntro: "Melalui program ini, kreator tidak hanya membuat konten biasa, melainkan diarahkan secara profesional dengan strategi matang untuk mendongkrak penjualan produk (GMV).",
           bullets: [
@@ -534,16 +534,14 @@
           sidebarCtaBtn: "Lihat Detail TSP"
         },
         tsp: {
-          image: "assets/tiktok_live_session.png",
+          image: "assets/images/tsp-illustration.png",
           badge: "TSP PROGRAM",
           badgeColor: "bg-cyan-100 text-cyan-700",
           subBadge: "Official TikTok Shop Partner",
-          title: "TikTok Shop Partner (TSP)",
-          heroTitle: "TIKTOK SHOP PARTNER",
+          title: "TikTok Seller Partner (TSP)",
+          heroTitle: "TIKTOK SELLER PARTNER",
           heroSubtitle: "Kelola operasional dan tingkatkan omset TikTok Shop brand Anda secara instan.",
-          heroIconBg: "bg-[#00B4D8]",
-          heroIcon: "shopping-bag",
-          intro: "Sebagai <strong>TikTok Shop Partner (TSP)</strong> resmi, PT. BISA MEDIA GRUP menyediakan solusi terpadu dan operasional menyeluruh (End-to-End) untuk membantu seller dan brand menjangkau pasar yang lebih luas di TikTok Shop. Kami menangani seluruh aspek operasional toko digital Anda agar Anda bisa lebih fokus pada pengembangan produk utama.",
+          intro: "Sebagai <strong>TikTok Seller Partner (TSP)</strong> resmi, PT. BISA MEDIA GRUP menyediakan solusi terpadu dan operasional menyeluruh (End-to-End) untuk membantu seller dan brand menjangkau pasar yang lebih luas di TikTok Shop. Kami menangani seluruh aspek operasional toko digital Anda agar Anda bisa lebih fokus pada pengembangan produk utama.",
           bulletTitle: "Solusi Lengkap Layanan TSP Kami",
           bulletIntro: "Layanan kami dirancang khusus untuk memastikan toko TikTok Shop Anda beroperasi dengan performa maksimal setiap hari:",
           bullets: [
@@ -573,15 +571,13 @@
           sidebarCtaBtn: "Lihat Program TAP"
         },
         project: {
-          image: "assets/about_us.png",
+          image: "assets/images/about-us.png",
           badge: "PROJECT PROGRAM",
           badgeColor: "bg-purple-100 text-purple-700",
           subBadge: "Bisa Media Special Projects",
           title: "Our Project",
           heroTitle: "OUR PROJECT",
           heroSubtitle: "Berbagai program kerja sama dan inisiatif tahunan untuk memperkuat ekosistem digital.",
-          heroIconBg: "bg-[#8A2BE2]",
-          heroIcon: "calendar",
           intro: "PT. BISA MEDIA GRUP secara konsisten menyelenggarakan dan mengelola berbagai program, akademi, serta acara tahunan berskala nasional untuk memperkuat sinergi antara kreator, affiliate, seller, dan masyarakat luas.",
           bulletTitle: "Inisiatif & Proyek Utama Kami",
           bulletIntro: "Kami merancang berbagai proyek berkelanjutan untuk akselerasi bisnis dan berbagi kebaikan:",
@@ -651,9 +647,6 @@
         document.getElementById("hero-image").src = data.image;
 
         // Banner Hero
-        const iconContainer = document.getElementById("hero-icon-container");
-        iconContainer.className = `${data.heroIconBg} w-20 h-20 mx-auto rounded-full flex items-center justify-center text-white mb-2 shadow-lg`;
-        iconContainer.innerHTML = `<i data-lucide="${data.heroIcon}" class="w-10 h-10"></i>`;
         
         document.getElementById("hero-title").textContent = data.heroTitle;
         document.getElementById("hero-subtitle").textContent = data.heroSubtitle;

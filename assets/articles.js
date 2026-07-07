@@ -4,7 +4,7 @@ const articlesData = [
     title: "Pedoman Etika dan Perilaku Kreator",
     date: "24 Mar 2026",
     category: "Cegah Penyebaran Informasi Yang Menyesatkan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Prioritas kami adalah mempertahankan lingkungan yang aman dan ramah bagi semua orang di TikTok. Kami mengharapkan semua kreator mematuhi kebijakan...",
     content: `
       <p class="mb-4">Prioritas kami adalah mempertahankan lingkungan yang aman dan ramah bagi semua orang di TikTok. Kami mengharapkan semua kreator agar mematuhi Panduan Komunitas, Ketentuan Layanan, dan ketentuan kreator atau program lain yang telah disepakati, sehingga kita semua dapat tetap terlindungi dan terus membina komunitas di platform kami.</p>
@@ -40,7 +40,7 @@ const articlesData = [
     title: "Optimasi Algoritma Video Vertikal Terkini 2026",
     date: "15 Jun 2026",
     category: "Membuat Konten Berkualitas Tinggi",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Algoritma platform video pendek terus berevolusi untuk memprioritaskan retensi penonton dan interaksi berkualitas tinggi. Untuk memastikan video Anda...",
     content: `
       <p class="mb-4">Algoritma platform video pendek (seperti TikTok dan Instagram Reels) terus berevolusi untuk memprioritaskan retensi penonton dan interaksi berkualitas tinggi. Untuk memastikan video Anda masuk ke FYP (For You Page), Anda harus mengoptimalkan detik-detik pertama konten Anda.</p>
@@ -54,7 +54,7 @@ const articlesData = [
     title: "Mengapa Video Pendek Lebih Unggul Menjual Produk",
     date: "12 Jun 2026",
     category: "Membuat Konten Berkualitas Tinggi",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Perilaku konsumen saat ini cenderung menyukai konten visual yang dinamis, cepat saji, dan otentik. Video pendek memberikan pengalaman belanja...",
     content: `
       <p class="mb-4">Perilaku konsumen saat ini, terutama generasi milenial dan Gen Z, cenderung menyukai konten visual yang dinamis, cepat saji, dan otentik. Video pendek memberikan pengalaman belanja yang lebih imersif dibandingkan dengan foto statis.</p>
@@ -68,7 +68,7 @@ const articlesData = [
     title: "Memahami Kebijakan TikTok Tentang Privasi dan Keamanan",
     date: "30 Mar 2026",
     category: "Cegah Penyebaran Informasi Yang Menyesatkan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Menjaga keamanan informasi pribadi Anda serta memastikan TikTok tetap aman merupakan bagian penting dari upaya kami untuk mendapatkan kepercayaan...",
     content: `
       <p class="mb-4">Menjaga keamanan informasi pribadi Anda serta memastikan TikTok tetap aman merupakan bagian penting dari upaya kami untuk mendapatkan kepercayaan Anda. Privasi dan keamanan adalah prioritas kami.</p>
@@ -109,7 +109,7 @@ const articlesData = [
     title: "Melaporkan dan Mengajukan Banding Atas Klaim Peniruan Identitas",
     date: "30 Mar 2026",
     category: "Banding & Dukungan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Keaslian Anda itulah yang membuat TikTok begitu istimewa. Jadi jika akun Anda ditiru di platform kami, kami akan membantu! Pelajari cara melaporkan...",
     content: `
       <p class="mb-4">Keaslian Anda itulah yang membuat TikTok begitu istimewa. Jadi jika akun Anda ditiru di platform kami, kami akan membantu! Baca selengkapnya di bawah ini untuk mempelajari cara melaporkan peniruan identitas dan apa yang dapat Anda lakukan untuk menjaga keamanan akun Anda.</p>
@@ -137,7 +137,7 @@ const articlesData = [
     title: "Mengajukan Banding Atas Video yang Dibisukan",
     date: "30 Mar 2026",
     category: "Banding & Dukungan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Pernahkah suara di videomu hilang? Kemungkinan besar suara tersebut dibisukan karena alasan hak cipta. Pelajari langkah mengatasinya...",
     content: `
       <p class="mb-4">Pernahkah suara di videomu hilang? Kemungkinan besar suara tersebut dibisukan karena alasan hak cipta. Untuk membantumu menghindari masalah ini di kemudian hari, kami telah menambahkan fitur yang menghilangkan keraguan dalam proses hak cipta!</p>
@@ -161,7 +161,7 @@ const articlesData = [
     title: "Moderasi dan Banding",
     date: "23 Mar 2026",
     category: "Banding & Dukungan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Di TikTok, misi kami adalah untuk menginspirasi kreativitas dan menghadirkan sukacita. Ketahui cara sistem moderasi kami bekerja...",
     content: `
       <p class="mb-4">Di TikTok, misi kami adalah untuk menginspirasi kreativitas dan menghadirkan sukacita. Untuk memenuhi misi kami, kami menghapus konten dan akun berbahaya untuk menyediakan lingkungan yang mendukung komunitas kami.</p>
@@ -181,7 +181,7 @@ const articlesData = [
     title: "Memahami Kebijakan Akun TikTok",
     date: "23 Mar 2026",
     category: "Cegah Penyebaran Informasi Yang Menyesatkan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Kami ingin komunitas kami mendapatkan pengalaman yang aman. Untuk itu, kami menerapkan kebijakan akun tertentu untuk membantu menjaga komunitas...",
     content: `
       <p class="mb-4">Kami ingin komunitas kami mendapatkan pengalaman yang aman dan menghibur di platform kami. Untuk itu, kami menerapkan kebijakan akun tertentu untuk membantu kami menjaga Panduan Komunitas kami.</p>
@@ -212,7 +212,7 @@ const articlesData = [
     title: "Memahami Sistem Rekomendasi",
     date: "23 Mar 2026",
     category: "Cegah Penyebaran Informasi Yang Menyesatkan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Pernahkah Anda bertanya-tanya mengapa feed TikTok Anda seolah-olah mengetahui apa yang Anda sukai? Pahami cara kerja sistem rekomendasi...",
     content: `
       <p class="mb-4">Pernahkah Anda bertanya-tanya mengapa feed TikTok Anda seolah-olah mengetahui apa yang Anda sukai? Bukan sulap—inilah cara kerja sistem rekomendasi kami. Mari kita pelajari tentang bagaimana sistem ini menyajikan konten yang tepat kepada Anda.</p>
@@ -242,7 +242,7 @@ const articlesData = [
     title: "Mengapa Video Anda Tidak Direkomendasikan di Feed Saran?",
     date: "23 Mar 2026",
     category: "Cegah Penyebaran Informasi Yang Menyesatkan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Feed Saran ditujukan untuk berbagai kalangan penonton. Mengapa video Anda tidak direkomendasikan? Cari tahu penyebabnya...",
     content: `
       <p class="mb-4">Feed Saran adalah inti dari pengalaman TikTok. Kami menjaga standar kelayakan konten untuk feed Saran yang mengutamakan keamanan dan didasarkan pada keragaman komunitas serta praktik budaya kami.</p>
@@ -266,7 +266,7 @@ const articlesData = [
     title: "Menjaga Akun Anda Tetap Aman dan Terlindungi",
     date: "23 Mar 2026",
     category: "Kesehatan Akun",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Keamanan Anda di TikTok sangat penting bagi kami. Berikut adalah panduan praktis untuk membantu Anda menjaga keamanan akun Anda...",
     content: `
       <p class="mb-4">Keamanan Anda di TikTok sangat penting bagi kami. Itulah sebabnya kami berusaha mempermudah akses Anda ke alat dan pengetahuan yang Anda perlukan untuk menjaga keamanan akun Anda.</p>
@@ -289,7 +289,7 @@ const articlesData = [
     title: "Batas Posting Konten TikTok Shop by Tokopedia",
     date: "10 Jan 2026",
     category: "Aturan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Batas Posting Konten membatasi jumlah video jualan atau LIVE yang bisa diunggah jika akun Anda berulang kali mengunggah konten berkualitas rendah...",
     content: `
       <p class="mb-4">Batas Posting Konten (CPL) TikTok Shop by Tokopedia membatasi jumlah video jualan atau LIVE yang bisa Anda unggah dalam periode tertentu jika terdeteksi adanya pelanggaran kualitas konten.</p>
@@ -311,7 +311,7 @@ const articlesData = [
     title: "Pernyataan Palsu",
     date: "22 Okt 2025",
     category: "Cegah Penyebaran Informasi Yang Menyesatkan",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Semua konten tidak boleh mengandung pernyataan palsu tentang suatu produk. Ketahui contoh klaim yang dilarang dan cara menghindarinya...",
     content: `
       <p class="mb-4">Semua konten yang dibuat tidak boleh mengandung pernyataan palsu atau klaim menyesatkan tentang suatu produk untuk menjaga kepercayaan konsumen.</p>
@@ -338,7 +338,7 @@ const articlesData = [
     title: "Konten Non-Interaktif - Cara Menghindari Pelanggaran",
     date: "22 Okt 2025",
     category: "Membuat Konten Berkualitas Tinggi",
-    image: "assets/hero_banner.png",
+    image: "assets/images/hero-banner.png",
     excerpt: "Konten non-interaktif adalah konten berkualitas rendah karena tidak ada aktivitas berarti di layar. Pahami panduan untuk menghindarinya...",
     content: `
       <p class="mb-4">Konten non-interaktif adalah konten yang kurang berkualitas karena tidak ada aktivitas berarti di layar (misalnya gambar diam) atau tanpa interaksi verbal secara langsung.</p>

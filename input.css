@@ -531,6 +531,34 @@ body {
   #brand-building-section p {
     font-size: 0.65rem !important;
   }
+
+  /* --- Partnership Hero Banner Mobile --- */
+  #partner-hero .bg-slate-900\/60 {
+    background: linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.5) 50%, rgba(15,23,42,0.2) 100%) !important;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding: 1.25rem !important;
+  }
+  #partner-hero .bg-slate-900\/60 > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border-radius: 0.625rem !important;
+  }
+  #partner-hero .bg-slate-900\/60 > div i {
+    width: 1.125rem !important;
+    height: 1.125rem !important;
+  }
+  #partner-hero .bg-slate-900\/60 h3 {
+    font-size: 1.35rem !important;
+    max-width: 90% !important;
+  }
+  #partner-hero .bg-slate-900\/60 p {
+    max-width: 100% !important;
+    font-size: 0.75rem !important;
+  }
 }
 
 /* ================================================================
