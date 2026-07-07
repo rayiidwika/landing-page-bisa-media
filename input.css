@@ -381,9 +381,19 @@ body {
   #tiktok-programs .min-h-\[500px\] {
     min-height: auto !important;
   }
-  /* Hide the large illustration container on mobile to prevent excessive scrolling */
+  /* Mobile: reduce gap between image and text */
+  #tiktok-programs div[id^="content-"].flex-col {
+    gap: 0.75rem !important;
+  }
+  /* Mobile: show image in compact size */
   #tiktok-programs div[id^="content-"] > div:first-child {
-    display: none !important;
+    display: flex !important;
+    width: 100% !important;
+  }
+  #tiktok-programs div[id^="content-"] > div:first-child > div {
+    aspect-ratio: 16/9 !important;
+    max-height: 170px !important;
+    border-radius: 0.75rem !important;
   }
   /* Style detail wrapper */
   #tiktok-programs div[id^="content-"] > div:last-child {
@@ -394,51 +404,59 @@ body {
     flex-direction: column !important;
   }
   #tiktok-programs h3 {
-    font-size: 1.1rem !important;
-    margin-bottom: 0.25rem !important;
+    font-size: 1rem !important;
+    margin-bottom: 0 !important;
   }
-  #tiktok-programs p.text-slate-500 {
-    font-size: 0.7rem !important;
-    line-height: 1.3 !important;
+  /* Hide long description on mobile */
+  #tiktok-programs div[id^="content-"] > div:last-child > div > p {
+    display: none !important;
   }
-  /* List items */
+  /* List items - visual card grid */
   #tiktok-programs ul.space-y-4 {
-    display: flex !important;
-    flex-direction: column !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
     gap: 0.5rem !important;
-    margin-top: 0.5rem !important;
-  }
-  #tiktok-programs ul.space-y-4 li {
-    gap: 0.5rem !important;
-    align-items: center !important;
     margin-top: 0 !important;
   }
-  #tiktok-programs ul.space-y-4 li .w-10.h-10 {
-    width: 1.75rem !important;
-    height: 1.75rem !important;
-    border-radius: 0.5rem !important;
+  #tiktok-programs ul.space-y-4 li {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.375rem !important;
+    padding: 0.625rem 0.5rem !important;
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 0.75rem !important;
+    margin-top: 0 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
   }
-  #tiktok-programs ul.space-y-4 li .w-10.h-10 svg {
-    width: 1rem !important;
-    height: 1rem !important;
+  #tiktok-programs ul.space-y-4 li .w-8.h-8 {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    border-radius: 0.625rem !important;
+  }
+  #tiktok-programs ul.space-y-4 li .w-8.h-8 svg {
+    width: 1.125rem !important;
+    height: 1.125rem !important;
   }
   #tiktok-programs ul.space-y-4 li span {
-    font-size: 0.7rem !important;
+    font-size: 0.55rem !important;
     line-height: 1.25 !important;
   }
-  #tiktok-programs .pt-4 {
-    margin-top: 0.5rem !important;
+  /* CTA button full width on mobile */
+  #tiktok-programs .pt-2 {
+    margin-top: 0 !important;
     padding-top: 0 !important;
   }
+  #tiktok-programs .pt-2 a,
   #tiktok-programs .pt-4 a {
-    padding: 0.5rem 1rem !important;
-    font-size: 0.7rem !important;
-    border-radius: 0.5rem !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
   }
-  #tiktok-programs .pt-4 span {
-    padding: 0.35rem 0.75rem !important;
-    font-size: 0.6rem !important;
-    border-radius: 0.5rem !important;
+  #tiktok-programs .pt-4 {
+    gap: 0.5rem !important;
   }
 
   /* --- Articles Page Hero --- */
