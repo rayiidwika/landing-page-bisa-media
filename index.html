@@ -421,7 +421,7 @@
       <h3 class="text-center text-[#2C5EAD] font-bold text-base sm:text-lg tracking-wide mb-10">
         Featured in Media
       </h3>
-      <div class="media-logo-grid grid grid-cols-6 gap-2 items-center justify-center max-w-7xl mx-auto">
+      <div class="media-logo-grid grid grid-cols-3 md:grid-cols-6 gap-2 items-center justify-center max-w-7xl mx-auto">
         <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
           <img src="assets/media_liputan6.svg" alt="Liputan 6" style="height:220px;"
             class="w-full object-contain media-logo" />
@@ -518,7 +518,7 @@
 
       <!-- Partner Brand Texts Underneath -->
       <div
-        class="mt-12 text-center text-xs text-slate-400 font-bold uppercase tracking-wider max-w-4xl mx-auto leading-relaxed px-4">
+        class="mt-12 text-center text-[9px] md:text-xs text-slate-400 font-bold uppercase tracking-wider max-w-4xl mx-auto leading-relaxed px-4">
         Djomar Indonesia &nbsp;&bull;&nbsp; Seger Snow &nbsp;&bull;&nbsp;
         Kinara ID &nbsp;&bull;&nbsp; Harco Batik &nbsp;&bull;&nbsp; Tsabine
         Official &nbsp;&bull;&nbsp; The Skin Remedy &nbsp;&bull;&nbsp;
@@ -535,58 +535,52 @@
   </section>
 
   <!-- CAMPUS COLLABORATION -->
-  <section class="pt-4 pb-4 bg-white border-t border-slate-100">
+  <section id="campus" class="pt-4 pb-4 bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h3 class="text-center text-[#2C5EAD] font-bold text-base sm:text-lg tracking-wide mb-10">
         Collaboration with Campus &amp; University
       </h3>
 
-      <!-- Logo Cloud — 5-Column Grid (compact on mobile via CSS) -->
-      <div class="campus-logo-grid flex flex-col gap-0 max-w-5xl mx-auto mb-2">
-        <div class="grid grid-cols-5 gap-1 md:gap-2 items-center justify-center max-w-4xl mx-auto w-full">
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_ui.svg" alt="Universitas Indonesia"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_itb.svg" alt="ITB"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_ugm.svg" alt="UGM"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_unair.svg" alt="UNAIR"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_ub.svg" alt="Universitas Brawijaya"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
+      <div class="grid grid-cols-3 md:grid-cols-5 gap-2 items-center justify-center max-w-5xl mx-auto mb-2">
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_ui.svg" alt="Universitas Indonesia"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
         </div>
-
-        <div class="grid grid-cols-5 gap-1 md:gap-2 items-center justify-center max-w-4xl mx-auto w-full">
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_ipb.svg" alt="IPB"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_undip.svg" alt="UNDIP"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_unpad.svg" alt="UNPAD"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_unhas.svg" alt="UNHAS"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/univ_telkom.svg" alt="Telkom University"
-              class="campus-logo h-[40px] sm:h-[70px] md:h-[100px] w-full object-contain" />
-          </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_itb.svg" alt="ITB"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
+        </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_ugm.svg" alt="UGM"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
+        </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_unair.svg" alt="UNAIR"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
+        </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_ub.svg" alt="Universitas Brawijaya"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
+        </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_ipb.svg" alt="IPB"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
+        </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_undip.svg" alt="UNDIP"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
+        </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_unpad.svg" alt="UNPAD"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
+        </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_unhas.svg" alt="UNHAS"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
+        </div>
+        <div class="flex items-center justify-center py-1 hover:scale-105 transition-transform duration-300">
+          <img src="assets/univ_telkom.svg" alt="Telkom University"
+            class="w-full object-contain h-[40px] sm:h-[70px] md:h-[100px]" />
         </div>
       </div>
 
@@ -760,11 +754,11 @@
         <div class="flex overflow-x-auto scrollbar-hide gap-2 sm:gap-3 pb-2 w-full max-w-2xl justify-start sm:justify-center px-1">
           <button id="tab-tap-btn"
             class="flex-shrink-0 px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl border border-[#1591DC] bg-[#1591DC]/5 text-[#1591DC] transition-all duration-300 font-extrabold text-[11px] sm:text-sm">
-            Bisa Social Commerce (TAP)
+            Tiktok Affiliate Partner (TAP)
           </button>
           <button id="tab-tsp-btn"
             class="flex-shrink-0 px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl border border-transparent text-slate-500 hover:text-[#1591DC] transition-all duration-300 font-bold text-[11px] sm:text-sm">
-            Bisa Shop Partner (TSP)
+            Tiktok Seller Partner (TSP)
           </button>
           <button id="tab-project-btn"
             class="flex-shrink-0 px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl border border-transparent text-slate-500 hover:text-[#1591DC] transition-all duration-300 font-bold text-[11px] sm:text-sm">
@@ -790,10 +784,10 @@
           <div class="w-full md:w-1/2 space-y-4 sm:space-y-6">
             <div>
               <h3 class="font-outfit font-extrabold text-2xl sm:text-3xl text-[#1591DC] mb-2 sm:mb-3">
-                Bisa Social Commerce
+                Tiktok Affiliate Partner
               </h3>
               <p class="text-slate-500 text-xs sm:text-sm lg:text-base leading-relaxed font-medium">
-                BISA SOCIAL COMMERCE is a network that manages, monetizes, and
+                Tiktok Affiliate Partner is a network that manages, monetizes, and
                 supports affiliates, talents, and digital content creators.
               </p>
             </div>
@@ -844,10 +838,10 @@
           <div class="w-full md:w-1/2 space-y-4 sm:space-y-6">
             <div>
               <h3 class="font-outfit font-extrabold text-2xl sm:text-3xl text-[#1591DC] mb-2 sm:mb-3">
-                TikTok Shop Partner
+                TikTok Seller Partner
               </h3>
               <p class="text-slate-500 text-xs sm:text-sm lg:text-base leading-relaxed font-medium">
-                BISA SHOP PARTNER is an end-to-end service provider that manages operations, logistics, live streaming, and stores for TikTok sellers and global brands.
+                Tiktok Seller Partner is an end-to-end service provider that manages operations, logistics, live streaming, and stores for TikTok sellers and global brands.
               </p>
             </div>
             <ul class="space-y-3 sm:space-y-4">

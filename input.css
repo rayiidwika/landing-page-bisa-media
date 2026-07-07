@@ -215,13 +215,13 @@ body {
     letter-spacing: 0.03em !important;
   }
 
-  /* --- Media Logos (6 columns compact) --- */
+  /* --- Media Logos (3 columns) --- */
   .media-logo-grid {
-    gap: 0.25rem !important;
+    gap: 0.35rem !important;
   }
   .media-logo {
-    height: 36px !important;
-    max-height: 36px !important;
+    height: 100px !important;
+    max-height: 100px !important;
   }
 
   /* --- About Us --- */
@@ -232,13 +232,13 @@ body {
     height: 120px !important;
   }
 
-  /* --- Campus Collaboration --- */
-  .campus-logo-grid {
-    gap: 0.25rem !important;
+  /* --- Campus Collaboration (3 cols mobile, like media) --- */
+  #campus .grid {
+    gap: 0.35rem !important;
   }
-  .campus-logo {
-    height: 30px !important;
-    max-height: 30px !important;
+  #campus img {
+    height: 100px !important;
+    max-height: 100px !important;
   }
 
   /* --- Home for Creators (2-column grid) --- */
