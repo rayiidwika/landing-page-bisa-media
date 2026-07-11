@@ -224,6 +224,10 @@ body {
     height: 100px !important;
     max-height: 100px !important;
   }
+  .media-logo-priangan {
+    height: 60px !important;
+    max-height: 60px !important;
+  }
 
   /* --- About Us --- */
   #tentang .p-10 {
